@@ -1,0 +1,22 @@
+"inc\oa_type.H", line 1423: Warning:  #64-D: declaration does not declare anything
+     oa_i2c_ctrl_single_write_t; /* Single write of blocking mode */
+     ^
+"src/oa_setting.c", line 277: Warning:  #167-D: argument of type "oa_char *" is incompatible with parameter of type "oa_uint8 *"
+                  oa_param_set_dtu_id(oa_get_imei());
+                                      ^
+"src/oa_setting.c", line 295: Warning:  #188-D: enumerated type mixed with another type
+          oa_sockaddr_struct  soc_addr={0};
+                                        ^
+"src/oa_setting.c", line 305: Warning:  #188-D: enumerated type mixed with another type
+             soc_addr.sock_type = *pParamBeg-'0';;
+                                ^
+"src/oa_setting.c", line 248: Warning:  #177-D: variable "ret" was declared but never referenced
+      oa_bool ret= OA_FALSE;
+              ^
+"src/oa_setting.c", line 518: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      g_set_param.client_t.port = oa_atoi(pot);
+                                          ^
+"src/oa_setting.c", line 537: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      g_set_param.client_t.port = oa_atoi(pot);
+                                          ^
+src/oa_setting.c: 7 warnings, 0 errors

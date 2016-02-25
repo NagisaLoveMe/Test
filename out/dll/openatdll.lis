@@ -1,0 +1,1296 @@
+ARM Linker, RVCT3.1 [Build 1021] 
+
+================================================================================
+
+Section Cross References
+
+    oa_app.o(i.crc16_ccitt) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_on_tone_play_req) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_power_shutdown) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_uart1_recv) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.lsl_timer_485tx_off_ind) refers to oa_app.o(.data) for .data
+    oa_app.o(i.lsl_timer_485tx_off_ind) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.lsl_timer_485tx_off_ind) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.lsl_timer_485tx_off_ind) refers to oa_app.o(i.oa_app_uart2_recv) for oa_app_uart2_recv
+    oa_app.o(i.lsl_uart_485_tx) refers to aeabi_sdiv.o(.text_udiv) for __aeabi_uidivmod
+    oa_app.o(i.lsl_uart_485_tx) refers to oa_app.o(.data) for .data
+    oa_app.o(i.lsl_uart_485_tx) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.lsl_uart_485_tx) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.lsl_uart_485_tx) refers to oa_app.o(i.lsl_timer_485tx_off_ind) for lsl_timer_485tx_off_ind
+    oa_app.o(i.oa_app_execute_custom_at_cmd) refers to oa_setting.o(i.oa_set_param_cmd_parse) for oa_set_param_cmd_parse
+    oa_app.o(i.oa_app_execute_custom_at_cmd) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_at_rsp_recv) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.oa_set_param_init) for oa_set_param_init
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_uart2) for lsl_param_get_uart2
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_heart_pkt_info) for lsl_param_get_heart_pkt_info
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_password) for lsl_param_get_password
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_client_info) for lsl_param_get_client_info
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_virtual_id) for lsl_param_get_virtual_id
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_phone_table) for lsl_param_get_phone_table
+    oa_app.o(i.oa_app_init) refers to oa_setting.o(i.lsl_param_get_auto_upload_time) for lsl_param_get_auto_upload_time
+    oa_app.o(i.oa_app_init) refers to oa_soc.o(i.gprs_init) for gprs_init
+    oa_app.o(i.oa_app_init) refers to oa_app.o(i.oa_app_at_rsp_recv) for oa_app_at_rsp_recv
+    oa_app.o(i.oa_app_init) refers to oa_app.o(i.oa_app_execute_custom_at_cmd) for oa_app_execute_custom_at_cmd
+    oa_app.o(i.oa_app_init) refers to oa_app.o(.data) for .data
+    oa_app.o(i.oa_app_init) refers to oa_app.o(i.oa_app_uart2_recv) for oa_app_uart2_recv
+    oa_app.o(i.oa_app_init) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_init) refers to oa_sms.o(i.oa_sms_rcv_ind_handler) for oa_sms_rcv_ind_handler
+    oa_app.o(i.oa_app_init) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.lsl_factory_setting_timer_ind) refers to oa_app.o(i.oa_app_init) for oa_app_init
+    oa_app.o(i.lsl_factory_setting_timer_ind) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.lsl_factory_setting_timer_ind) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.protocol_analyze) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(i.crc16_ccitt) for crc16_ccitt
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_auto_upload_time) for lsl_param_set_auto_upload_time
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_auto_upload_time) for lsl_param_get_auto_upload_time
+    oa_app.o(i.protocol_analyze) refers to oa_soc.o(i.oa_write_buffer_noinit) for oa_write_buffer_noinit
+    oa_app.o(i.protocol_analyze) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_app.o(i.protocol_analyze) refers to oa_sms.o(i.lsl_check_phone_binding) for lsl_check_phone_binding
+    oa_app.o(i.protocol_analyze) refers to aeabi_sdiv.o(.text_udiv) for __aeabi_uidivmod
+    oa_app.o(i.protocol_analyze) refers to oa_sms.o(i.lsl_sms_send_ucs2) for lsl_sms_send_ucs2
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_heart_pkt_info) for lsl_param_set_heart_pkt_info
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_heart_pkt_info) for lsl_param_get_heart_pkt_info
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(.data) for .data
+    oa_app.o(i.protocol_analyze) refers to oa_soc.o(i.heart_pkt_timer_ind) for heart_pkt_timer_ind
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_psw) for lsl_param_set_psw
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_password) for lsl_param_get_password
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_ipaddr) for lsl_param_set_ipaddr
+    oa_app.o(i.protocol_analyze) refers to oa_soc.o(i.lsl_soc_close_req) for lsl_soc_close_req
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_client_info) for lsl_param_get_client_info
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_domain) for lsl_param_set_domain
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_uart2) for lsl_param_set_uart2
+    oa_app.o(i.protocol_analyze) refers to oa_sms.o(i.lsl_sms_send_7bit) for lsl_sms_send_7bit
+    oa_app.o(i.protocol_analyze) refers to oa_app.o(i.oa_app_uart2_recv) for oa_app_uart2_recv
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_phone_table) for lsl_param_get_phone_table
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_clr_phone_num) for lsl_param_clr_phone_num
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_phone_table) for lsl_param_set_phone_table
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_set_virtual_id) for lsl_param_set_virtual_id
+    oa_app.o(i.protocol_analyze) refers to oa_setting.o(i.lsl_param_get_virtual_id) for lsl_param_get_virtual_id
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_app.o(i.protocol_analyze) for protocol_analyze
+    oa_app.o(i.oa_app_uart2_recv) refers to switch8.o(.text) for __ARM_switch8
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_soc.o(i.oa_write_buffer_noinit) for oa_write_buffer_noinit
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_app.o(i.lsl_factory_setting_timer_ind) for lsl_factory_setting_timer_ind
+    oa_app.o(i.oa_app_uart2_recv) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.oa_app_uart3_recv) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.my_process_service) refers to oa_soc.o(i.lsl_soc_close_req) for lsl_soc_close_req
+    oa_app.o(i.my_process_service) refers to oa_app.o(i.crc16_ccitt) for crc16_ccitt
+    oa_app.o(i.my_process_service) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_app.o(i.my_process_service) refers to oa_soc.o(i.gprs_connect) for gprs_connect
+    oa_app.o(i.my_process_service) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.my_process_service) refers to oa_app.o(.data) for .data
+    oa_app.o(i.my_process_service) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.my_process_service) refers to oa_soc.o(.bss) for g_soc_context
+    oa_app.o(i.my_process_service) refers to oa_soc.o(.data) for hrt_dog_t
+    oa_app.o(i.oa_app_scheduler_entry) refers to oa_sms.o(i.oa_sms_init) for oa_sms_init
+    oa_app.o(i.oa_app_scheduler_entry) refers to oa_soc.o(i.lsl_soc_close_req) for lsl_soc_close_req
+    oa_app.o(i.oa_app_scheduler_entry) refers to oa_app.o(i.my_process_service) for my_process_service
+    oa_app.o(i.oa_app_scheduler_entry) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.oa_app_scheduler_entry) refers to oa_app.o(.data) for .data
+    oa_app.o(i.lsl_link_led_timer_ind) refers to oa_app.o(.data) for .data
+    oa_app.o(i.lsl_ring_led_timer_ind) refers to oa_app.o(.data) for .data
+    oa_app.o(i.lsl_ring_led_timer_ind) refers to oa_app.o(.bss) for .bss
+    oa_app.o(i.oa_app_main) refers to oa_app.o(i.oa_app_init) for oa_app_init
+    oa_app.o(i.oa_app_main) refers to oa_app.o(i.oa_app_scheduler_entry) for oa_app_scheduler_entry
+    oa_app.o(i.oa_app_main) refers to oa_app.o(i.lsl_link_led_timer_ind) for lsl_link_led_timer_ind
+    oa_app.o(i.oa_app_main) refers to oa_app.o(i.lsl_ring_led_timer_ind) for lsl_ring_led_timer_ind
+    oa_app.o(i.oa_tst_eint_hisr) refers to oa_app.o(.data) for .data
+    oa_app.o(i.oa_tst_eint_hisr) refers to oa_app.o(.constdata) for .constdata
+    oa_app.o(i.clear_hrt_dog_t) refers to oa_soc.o(.data) for hrt_dog_t
+    oa_app.o(OA_USER_ENTRY) refers to oa_app.o(.data) for .data
+    oa_app.o(OA_USER_ENTRY) refers to oa_app.o(i.oa_app_main) for oa_app_main
+    oa_app.o(OA_USER_ENTRY) refers to oa_app.o(i.oa_app_hw_init) for oa_app_hw_init
+    oa_setting.o(i.oa_set_param_init) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_set_param_init) refers to oa_setting.o(.data) for .data
+    oa_setting.o(i.oa_set_param_init) refers to oa_setting.o(.constdata) for .constdata
+    oa_setting.o(i.oa_set_param_save) refers to oa_setting.o(.constdata) for .constdata
+    oa_setting.o(i.oa_set_param_save) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_set_param_check) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_param_get_apninfo) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.oa_param_get_apninfo) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_param_set_apninfo) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.oa_param_set_apninfo) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_param_set_soc_addr) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.oa_param_set_soc_addr) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_param_get_dtu_id) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.oa_param_get_dtu_id) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_param_set_dtu_id) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.oa_param_set_dtu_id) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(i.oa_param_set_dtu_id) for oa_param_set_dtu_id
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(i.oa_param_get_dtu_id) for oa_param_get_dtu_id
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(i.oa_param_set_soc_addr) for oa_param_set_soc_addr
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(i.oa_param_set_apninfo) for oa_param_set_apninfo
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(i.oa_param_get_apninfo) for oa_param_get_apninfo
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_soc.o(i.oa_soc_close_req) for oa_soc_close_req
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_app.o(.data) for g_oa_ps_port
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_soc.o(.bss) for g_soc_context
+    oa_setting.o(i.oa_set_param_cmd_parse) refers to oa_soc.o(i.oa_soc_set_apn_cb) for oa_soc_set_apn_cb
+    oa_setting.o(i.oa_param_get_soc_addr) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.oa_param_get_soc_addr) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_psw) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_psw) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_domain) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_domain) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_ipaddr) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_ipaddr) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_heart_pkt_info) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_heart_pkt_info) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_virtual_id) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_virtual_id) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_phone_table) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_phone_table) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_clr_phone_num) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_clr_phone_num) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_uart2) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_uart2) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_set_auto_upload_time) refers to oa_setting.o(i.oa_set_param_save) for oa_set_param_save
+    oa_setting.o(i.lsl_param_set_auto_upload_time) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_client_info) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_client_info) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_password) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_password) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_heart_pkt_info) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_heart_pkt_info) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_virtual_id) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_virtual_id) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_phone_table) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_phone_table) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_uart2) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_uart2) refers to oa_setting.o(.bss) for .bss
+    oa_setting.o(i.lsl_param_get_auto_upload_time) refers to oa_setting.o(i.oa_set_param_check) for oa_set_param_check
+    oa_setting.o(i.lsl_param_get_auto_upload_time) refers to oa_setting.o(.bss) for .bss
+    oa_sms.o(i.oa_sms_send_req_cb) refers to oa_sms.o(.constdata) for .constdata
+    oa_sms.o(i.oa_sms_send_req_cb) refers to oa_app.o(.bss) for gSmsStateT
+    oa_sms.o(i.os_sms_send_demo_7bit) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.os_sms_send_demo_8bit) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.os_sms_send_demo_ucs2) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_sms.o(i.os_sms_send_demo_ucs2) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.lsl_sms_send_7bit) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.lsl_sms_send_8bit) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.lsl_sms_send_ucs2) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_sms.o(i.lsl_sms_send_ucs2) refers to oa_sms.o(i.oa_sms_send_req_cb) for oa_sms_send_req_cb
+    oa_sms.o(i.lsl_check_phone_binding) refers to oa_app.o(.bss) for gModuleConfigT
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_app.o(i.protocol_analyze) for protocol_analyze
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to switch8.o(.text) for __ARM_switch8
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_sms.o(i.lsl_sms_send_7bit) for lsl_sms_send_7bit
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_sms.o(i.lsl_sms_send_ucs2) for lsl_sms_send_ucs2
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_sms.o(.constdata) for .constdata
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_app.o(.bss) for gSmsStateT
+    oa_sms.o(i.oa_sms_rcv_ind_handler) refers to oa_app.o(i.lsl_factory_setting_timer_ind) for lsl_factory_setting_timer_ind
+    oa_soc.o(i.oa_soc_send_heartbeat_data) refers to oa_soc.o(i.oa_soc_start_heartbeat_timer) for oa_soc_start_heartbeat_timer
+    oa_soc.o(i.oa_soc_send_heartbeat_data) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_send_heartbeat_data) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_start_heartbeat_timer) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_start_heartbeat_timer) refers to oa_soc.o(i.oa_soc_send_heartbeat_data) for oa_soc_send_heartbeat_data
+    oa_soc.o(i.oa_soc_can_reconnect_again) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_can_reconnect_again) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_close_req) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_close_req) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_close_req) refers to oa_soc.o(i.oa_soc_can_reconnect_again) for oa_soc_can_reconnect_again
+    oa_soc.o(i.oa_read_buffer_noinit) refers to oa_soc.o(i.oa_query_buffer_noinit) for oa_query_buffer_noinit
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(i.oa_query_buffer_noinit) for oa_query_buffer_noinit
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(i.oa_read_buffer_noinit) for oa_read_buffer_noinit
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(i.oa_soc_start_heartbeat_timer) for oa_soc_start_heartbeat_timer
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(i.oa_soc_close_req) for oa_soc_close_req
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_send_req) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_gprs_recv) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_soc.o(i.oa_soc_gprs_recv) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(i.oa_soc_gprs_recv) for oa_soc_gprs_recv
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(i.oa_soc_send_req) for oa_soc_send_req
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(i.oa_soc_close_req) for oa_soc_close_req
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(i.oa_soc_start_heartbeat_timer) for oa_soc_start_heartbeat_timer
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_notify_ind) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_fill_addr_struct) refers to rt_memclr_w.o(.text) for __aeabi_memclr4
+    oa_soc.o(i.oa_soc_fill_addr_struct) refers to oa_setting.o(i.oa_param_get_soc_addr) for oa_param_get_soc_addr
+    oa_soc.o(i.oa_soc_fill_addr_struct) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_init) refers to oa_soc.o(i.oa_create_ring_buffer_noinit) for oa_create_ring_buffer_noinit
+    oa_soc.o(i.oa_soc_init) refers to oa_soc.o(i.oa_soc_fill_addr_struct) for oa_soc_fill_addr_struct
+    oa_soc.o(i.oa_soc_init) refers to oa_setting.o(i.oa_param_get_apninfo) for oa_param_get_apninfo
+    oa_soc.o(i.oa_soc_init) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_init) refers to oa_soc.o(i.oa_soc_notify_ind) for oa_soc_notify_ind
+    oa_soc.o(i.oa_soc_set_apn_cb) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_set_apn_cb) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(i.oa_soc_fill_addr_struct) for oa_soc_fill_addr_struct
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(i.oa_soc_start_heartbeat_timer) for oa_soc_start_heartbeat_timer
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(i.oa_soc_send_req) for oa_soc_send_req
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(i.oa_soc_close_req) for oa_soc_close_req
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_connect_req) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_state_check) refers to oa_setting.o(i.oa_param_get_soc_addr) for oa_param_get_soc_addr
+    oa_soc.o(i.oa_soc_state_check) refers to oa_soc.o(i.oa_soc_connect_req) for oa_soc_connect_req
+    oa_soc.o(i.oa_soc_state_check) refers to oa_soc.o(i.oa_soc_close_req) for oa_soc_close_req
+    oa_soc.o(i.oa_soc_state_check) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.oa_soc_state_check) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.oa_soc_send_data_demo) refers to oa_soc.o(i.oa_write_buffer_force_noinit) for oa_write_buffer_force_noinit
+    oa_soc.o(i.oa_soc_send_data_demo) refers to oa_soc.o(i.oa_soc_send_req) for oa_soc_send_req
+    oa_soc.o(i.oa_soc_send_data_demo) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.client_set_receive_callback) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.client_set_receive_callback) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_soc_close_req) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_soc_close_req) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.lsl_soc_close_req) refers to oa_soc.o(.data) for .data
+    oa_soc.o(i.lsl_soc_send_req) refers to oa_soc.o(i.oa_query_buffer_noinit) for oa_query_buffer_noinit
+    oa_soc.o(i.lsl_soc_send_req) refers to oa_soc.o(i.oa_read_buffer_noinit) for oa_read_buffer_noinit
+    oa_soc.o(i.lsl_soc_send_req) refers to oa_soc.o(i.lsl_soc_close_req) for lsl_soc_close_req
+    oa_soc.o(i.lsl_soc_send_req) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_soc_send_req) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_app.o(i.protocol_analyze) for protocol_analyze
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to switch8.o(.text) for __ARM_switch8
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_soc.o(i.oa_write_buffer_noinit) for oa_write_buffer_noinit
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_app.o(i.lsl_uart_485_tx) for lsl_uart_485_tx
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_client_gprs_datas_deal) refers to oa_app.o(i.lsl_factory_setting_timer_ind) for lsl_factory_setting_timer_ind
+    oa_soc.o(i.lsl_soc_send_heartbeat_data) refers to oa_app.o(i.crc16_ccitt) for crc16_ccitt
+    oa_soc.o(i.lsl_soc_send_heartbeat_data) refers to oa_soc.o(i.oa_write_buffer_noinit) for oa_write_buffer_noinit
+    oa_soc.o(i.lsl_soc_send_heartbeat_data) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_soc.o(i.lsl_soc_send_heartbeat_data) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_soc_send_heartbeat_data) refers to oa_soc.o(.data) for .data
+    oa_soc.o(i.lsl_soc_send_data) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_soc.o(i.lsl_debug_soc_send) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.heart_pkt_timer_ind) refers to oa_soc.o(i.lsl_soc_send_heartbeat_data) for lsl_soc_send_heartbeat_data
+    oa_soc.o(i.heart_pkt_timer_ind) refers to oa_app.o(.bss) for gModuleConfigT
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(i.lsl_soc_send_req) for lsl_soc_send_req
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(i.lsl_soc_close_req) for lsl_soc_close_req
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(.data) for .data
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.lsl_soc_notify_ind) refers to oa_soc.o(i.heart_pkt_timer_ind) for heart_pkt_timer_ind
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(i.oa_create_ring_buffer_noinit) for oa_create_ring_buffer_noinit
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(i.client_set_receive_callback) for client_set_receive_callback
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.gprs_init) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(.bss) for .bss
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(i.lsl_soc_notify_ind) for lsl_soc_notify_ind
+    oa_soc.o(i.gprs_init) refers to oa_soc.o(i.lsl_client_gprs_datas_deal) for lsl_client_gprs_datas_deal
+    oa_soc.o(i.gprs_connect) refers to rt_memcpy_w.o(.text) for __aeabi_memcpy4
+    oa_soc.o(i.gprs_connect) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.gprs_connect) refers to oa_app.o(.bss) for gClientStateT
+    oa_soc.o(i.gprs_set_apn_cb) refers to oa_soc.o(.constdata) for .constdata
+    oa_soc.o(i.gprs_set_apn_cb) refers to oa_soc.o(.data) for .data
+    aeabi_sdiv.o(.text_udiv) refers to aeabi_sdiv.o(.text) for __arm_div4
+    aeabi_sdiv_div0.o(.text_udiv) refers to aeabi_sdiv_div0.o(.text) for __arm_div4
+    aeabi_idiv0_sigfpe.o(.text) refers to rt_div0.o(.text) for __rt_div0
+    rt_div0.o(.text) refers to defsig_fpe_outer.o(.text) for __rt_SIGFPE
+    defsig_fpe_outer.o(.text) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_fpe_outer.o(.text) refers to defsig_exit.o(.text) for __sig_exit
+    defsig_fpe_formal.o(.text) refers to rt_raise.o(.text) for __rt_raise
+    rt_raise.o(.text) refers to __raise.o(.text) for __raise
+    rt_raise.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_exit.o(.text) refers to sys_exit.o(.text) for _sys_exit
+    defsig_fpe_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    sys_exit.o(.text) refers to use_no_semi.o(.text) for __I_use_semihosting
+    __raise.o(.text) refers to defsig.o(CL$$defsig) for __default_signal_handler
+    defsig_general.o(.text) refers to sys_wrch.o(.text) for _ttywrch
+    sys_wrch.o(.text) refers (Special) to use_no_semi.o(.text) for __I_use_semihosting
+    defsig.o(CL$$defsig) refers to defsig_fpe_inner.o(.text) for __rt_SIGFPE_inner
+    defsig_abrt_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtred_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_rtmem_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_stak_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_pvfn_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_cppl_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_segv_inner.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+    defsig_other.o(.text) refers to defsig_general.o(.text) for __default_signal_display
+
+
+================================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0.o ABSOLUTE
+    ../../angel/rt.s                         0x00000000   Number         0  aeabi_idiv0_sigfpe.o ABSOLUTE
+    ../../angel/rt.s                         0x00000000   Number         0  rt_div0.o ABSOLUTE
+    ../../angel/rt.s                         0x00000000   Number         0  rt_raise.o ABSOLUTE
+    ../../angel/sys.s                        0x00000000   Number         0  sys_exit.o ABSOLUTE
+    ../../angel/sys.s                        0x00000000   Number         0  use_no_semi.o ABSOLUTE
+    ../../angel/sysapp.c                     0x00000000   Number         0  sys_wrch.o ABSOLUTE
+    ../../division.s                         0x00000000   Number         0  aeabi_sdiv.o ABSOLUTE
+    ../../division.s                         0x00000000   Number         0  aeabi_sdiv_div0.o ABSOLUTE
+    ../../divrt.s                            0x00000000   Number         0  divrt_9e.o ABSOLUTE
+    ../../divrt.s                            0x00000000   Number         0  divrt_9e_div0.o ABSOLUTE
+    ../../memcpset.s                         0x00000000   Number         0  rt_memclr_w.o ABSOLUTE
+    ../../memcpset.s                         0x00000000   Number         0  rt_memcpy_w.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_abrt_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtred_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_segv_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_cppl_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_pvfn_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_stak_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_fpe_inner.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_fpe_outer.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_fpe_formal.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_exit.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_other.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  __raise.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_general.o ABSOLUTE
+    ../../signal.c                           0x00000000   Number         0  defsig_rtmem_inner.o ABSOLUTE
+    ../../signal.s                           0x00000000   Number         0  defsig.o ABSOLUTE
+    ../../unhosted.s                         0x00000000   Number         0  switch8.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    src/oa_app.c                             0x00000000   Number         0  oa_app.o ABSOLUTE
+    src/oa_setting.c                         0x00000000   Number         0  oa_setting.o ABSOLUTE
+    src/oa_sms.c                             0x00000000   Number         0  oa_sms.o ABSOLUTE
+    src/oa_soc.c                             0x00000000   Number         0  oa_soc.o ABSOLUTE
+    OA_USER_ENTRY                            0x00008000   Section       52  oa_app.o(OA_USER_ENTRY)
+    .text                                    0x00008034   Section      100  rt_memcpy_w.o(.text)
+    .text                                    0x00008098   Section       84  rt_memclr_w.o(.text)
+    .text                                    0x000080ec   Section      384  aeabi_sdiv.o(.text)
+    __arm_div8                               0x00008118   ARM Code       0  aeabi_sdiv.o(.text)
+    __arm_div4                               0x00008148   ARM Code       0  aeabi_sdiv.o(.text)
+    __arm_div_large                          0x0000819c   ARM Code       0  aeabi_sdiv.o(.text)
+    .text                                    0x0000826c   Section       24  switch8.o(.text)
+    .text_udiv                               0x00008284   Section       28  aeabi_sdiv.o(.text_udiv)
+    i.clear_hrt_dog_t                        0x00008448   Section       12  oa_app.o(i.clear_hrt_dog_t)
+    i.client_set_receive_callback            0x00008454   Section       28  oa_soc.o(i.client_set_receive_callback)
+    i.crc16_ccitt                            0x00008470   Section       48  oa_app.o(i.crc16_ccitt)
+    i.crc16_modbus                           0x000084a0   Section       68  oa_app.o(i.crc16_modbus)
+    i.gprs_connect                           0x000084e4   Section      520  oa_soc.o(i.gprs_connect)
+    i.gprs_init                              0x000086ec   Section      236  oa_soc.o(i.gprs_init)
+    i.gprs_set_apn_cb                        0x000087d8   Section       80  oa_soc.o(i.gprs_set_apn_cb)
+    i.heart_pkt_timer_ind                    0x00008828   Section       40  oa_soc.o(i.heart_pkt_timer_ind)
+    i.lsl_check_phone_binding                0x00008850   Section       68  oa_sms.o(i.lsl_check_phone_binding)
+    i.lsl_client_gprs_datas_deal             0x00008894   Section      472  oa_soc.o(i.lsl_client_gprs_datas_deal)
+    i.lsl_debug_soc_send                     0x00008a6c   Section       32  oa_soc.o(i.lsl_debug_soc_send)
+    i.lsl_factory_setting_timer_ind          0x00008a8c   Section       56  oa_app.o(i.lsl_factory_setting_timer_ind)
+    i.lsl_link_led_timer_ind                 0x00008ac4   Section       80  oa_app.o(i.lsl_link_led_timer_ind)
+    i.lsl_param_clr_phone_num                0x00008b14   Section       36  oa_setting.o(i.lsl_param_clr_phone_num)
+    i.lsl_param_get_auto_upload_time         0x00008b38   Section       16  oa_setting.o(i.lsl_param_get_auto_upload_time)
+    i.lsl_param_get_client_info              0x00008b48   Section       16  oa_setting.o(i.lsl_param_get_client_info)
+    i.lsl_param_get_heart_pkt_info           0x00008b58   Section       16  oa_setting.o(i.lsl_param_get_heart_pkt_info)
+    i.lsl_param_get_password                 0x00008b68   Section       16  oa_setting.o(i.lsl_param_get_password)
+    i.lsl_param_get_phone_table              0x00008b78   Section       16  oa_setting.o(i.lsl_param_get_phone_table)
+    i.lsl_param_get_uart2                    0x00008b88   Section       16  oa_setting.o(i.lsl_param_get_uart2)
+    i.lsl_param_get_virtual_id               0x00008b98   Section       16  oa_setting.o(i.lsl_param_get_virtual_id)
+    i.lsl_param_set_auto_upload_time         0x00008ba8   Section       16  oa_setting.o(i.lsl_param_set_auto_upload_time)
+    i.lsl_param_set_domain                   0x00008bb8   Section       60  oa_setting.o(i.lsl_param_set_domain)
+    i.lsl_param_set_heart_pkt_info           0x00008bf4   Section       48  oa_setting.o(i.lsl_param_set_heart_pkt_info)
+    i.lsl_param_set_ipaddr                   0x00008c24   Section       60  oa_setting.o(i.lsl_param_set_ipaddr)
+    i.lsl_param_set_phone_table              0x00008c60   Section       48  oa_setting.o(i.lsl_param_set_phone_table)
+    i.lsl_param_set_psw                      0x00008c90   Section       44  oa_setting.o(i.lsl_param_set_psw)
+    i.lsl_param_set_uart2                    0x00008cbc   Section       24  oa_setting.o(i.lsl_param_set_uart2)
+    i.lsl_param_set_virtual_id               0x00008cd4   Section       40  oa_setting.o(i.lsl_param_set_virtual_id)
+    i.lsl_ring_led_timer_ind                 0x00008cfc   Section       84  oa_app.o(i.lsl_ring_led_timer_ind)
+    i.lsl_sms_send_7bit                      0x00008d50   Section       32  oa_sms.o(i.lsl_sms_send_7bit)
+    i.lsl_sms_send_8bit                      0x00008d70   Section       32  oa_sms.o(i.lsl_sms_send_8bit)
+    i.lsl_sms_send_ucs2                      0x00008d90   Section       64  oa_sms.o(i.lsl_sms_send_ucs2)
+    i.lsl_soc_close_req                      0x00008dd0   Section       92  oa_soc.o(i.lsl_soc_close_req)
+    i.lsl_soc_notify_ind                     0x00008e2c   Section     1004  oa_soc.o(i.lsl_soc_notify_ind)
+    i.lsl_soc_send_data                      0x00009218   Section        8  oa_soc.o(i.lsl_soc_send_data)
+    i.lsl_soc_send_heartbeat_data            0x00009220   Section      112  oa_soc.o(i.lsl_soc_send_heartbeat_data)
+    i.lsl_soc_send_req                       0x00009290   Section      240  oa_soc.o(i.lsl_soc_send_req)
+    i.lsl_timer_485tx_off_ind                0x00009380   Section      496  oa_app.o(i.lsl_timer_485tx_off_ind)
+    i.lsl_timer_485tx_on_ind                 0x00009570   Section        2  oa_app.o(i.lsl_timer_485tx_on_ind)
+    i.lsl_uart_485_tx                        0x00009574   Section      240  oa_app.o(i.lsl_uart_485_tx)
+    i.my_process_service                     0x00009664   Section      956  oa_app.o(i.my_process_service)
+    i.oa_app_at_rsp_recv                     0x00009a20   Section      216  oa_app.o(i.oa_app_at_rsp_recv)
+    i.oa_app_execute_custom_at_cmd           0x00009af8   Section       48  oa_app.o(i.oa_app_execute_custom_at_cmd)
+    i.oa_app_hw_init                         0x00009b28   Section        2  oa_app.o(i.oa_app_hw_init)
+    i.oa_app_init                            0x00009b2c   Section      764  oa_app.o(i.oa_app_init)
+    i.oa_app_main                            0x00009e28   Section      144  oa_app.o(i.oa_app_main)
+    i.oa_app_on_tone_play_req                0x00009eb8   Section       28  oa_app.o(i.oa_app_on_tone_play_req)
+    i.oa_app_power_shutdown                  0x00009ed4   Section       36  oa_app.o(i.oa_app_power_shutdown)
+    i.oa_app_scheduler_entry                 0x00009ef8   Section      248  oa_app.o(i.oa_app_scheduler_entry)
+    i.oa_app_uart1_recv                      0x00009ff0   Section       40  oa_app.o(i.oa_app_uart1_recv)
+    i.oa_app_uart2_recv                      0x0000a018   Section      428  oa_app.o(i.oa_app_uart2_recv)
+    i.oa_app_uart3_recv                      0x0000a1c4   Section       40  oa_app.o(i.oa_app_uart3_recv)
+    i.oa_create_ring_buffer_noinit           0x0000a1ec   Section      148  oa_soc.o(i.oa_create_ring_buffer_noinit)
+    i.oa_free_buffer_noinit                  0x0000a280   Section        2  oa_soc.o(i.oa_free_buffer_noinit)
+    i.oa_param_get_apninfo                   0x0000a284   Section       16  oa_setting.o(i.oa_param_get_apninfo)
+    i.oa_param_get_dtu_id                    0x0000a294   Section       16  oa_setting.o(i.oa_param_get_dtu_id)
+    i.oa_param_get_soc_addr                  0x0000a2a4   Section       16  oa_setting.o(i.oa_param_get_soc_addr)
+    i.oa_param_set_apninfo                   0x0000a2b4   Section       24  oa_setting.o(i.oa_param_set_apninfo)
+    i.oa_param_set_dtu_id                    0x0000a2cc   Section       56  oa_setting.o(i.oa_param_set_dtu_id)
+    i.oa_param_set_soc_addr                  0x0000a304   Section       24  oa_setting.o(i.oa_param_set_soc_addr)
+    i.oa_press_key_0_handle                  0x0000a31c   Section        2  oa_app.o(i.oa_press_key_0_handle)
+    i.oa_press_key_1_handle                  0x0000a31e   Section        2  oa_app.o(i.oa_press_key_1_handle)
+    i.oa_press_key_2_handle                  0x0000a320   Section        2  oa_app.o(i.oa_press_key_2_handle)
+    i.oa_query_buffer_noinit                 0x0000a322   Section       68  oa_soc.o(i.oa_query_buffer_noinit)
+    i.oa_read_buffer_noinit                  0x0000a366   Section       58  oa_soc.o(i.oa_read_buffer_noinit)
+    i.oa_set_param_check                     0x0000a3a0   Section       48  oa_setting.o(i.oa_set_param_check)
+    i.oa_set_param_cmd_parse                 0x0000a3d0   Section      732  oa_setting.o(i.oa_set_param_cmd_parse)
+    i.oa_set_param_init                      0x0000a6ac   Section      148  oa_setting.o(i.oa_set_param_init)
+    i.oa_set_param_save                      0x0000a740   Section      176  oa_setting.o(i.oa_set_param_save)
+    i.oa_sms_init                            0x0000a7f0   Section       36  oa_sms.o(i.oa_sms_init)
+    i.oa_sms_rcv_ind_handler                 0x0000a814   Section     1036  oa_sms.o(i.oa_sms_rcv_ind_handler)
+    i.oa_sms_send_req_cb                     0x0000ac20   Section       52  oa_sms.o(i.oa_sms_send_req_cb)
+    i.oa_soc_can_reconnect_again             0x0000ac54   Section       40  oa_soc.o(i.oa_soc_can_reconnect_again)
+    i.oa_soc_close_req                       0x0000ac7c   Section      116  oa_soc.o(i.oa_soc_close_req)
+    i.oa_soc_connect_req                     0x0000acf0   Section      428  oa_soc.o(i.oa_soc_connect_req)
+    i.oa_soc_fill_addr_struct                0x0000ae9c   Section       72  oa_soc.o(i.oa_soc_fill_addr_struct)
+    i.oa_soc_gprs_recv                       0x0000aee4   Section       64  oa_soc.o(i.oa_soc_gprs_recv)
+    i.oa_soc_init                            0x0000af24   Section       88  oa_soc.o(i.oa_soc_init)
+    i.oa_soc_notify_ind                      0x0000af7c   Section      504  oa_soc.o(i.oa_soc_notify_ind)
+    i.oa_soc_send_data_demo                  0x0000b174   Section       48  oa_soc.o(i.oa_soc_send_data_demo)
+    i.oa_soc_send_heartbeat_data             0x0000b1a4   Section      112  oa_soc.o(i.oa_soc_send_heartbeat_data)
+    i.oa_soc_send_req                        0x0000b214   Section      252  oa_soc.o(i.oa_soc_send_req)
+    i.oa_soc_set_apn_cb                      0x0000b310   Section       68  oa_soc.o(i.oa_soc_set_apn_cb)
+    i.oa_soc_start_heartbeat_timer           0x0000b354   Section       36  oa_soc.o(i.oa_soc_start_heartbeat_timer)
+    i.oa_soc_state_check                     0x0000b378   Section      164  oa_soc.o(i.oa_soc_state_check)
+    i.oa_tst_eint_hisr                       0x0000b41c   Section      156  oa_app.o(i.oa_tst_eint_hisr)
+    i.oa_write_buffer_force_noinit           0x0000b4b8   Section      154  oa_soc.o(i.oa_write_buffer_force_noinit)
+    i.oa_write_buffer_noinit                 0x0000b552   Section       78  oa_soc.o(i.oa_write_buffer_noinit)
+    i.os_sms_send_demo_7bit                  0x0000b5a0   Section       52  oa_sms.o(i.os_sms_send_demo_7bit)
+    i.os_sms_send_demo_8bit                  0x0000b5d4   Section       52  oa_sms.o(i.os_sms_send_demo_8bit)
+    i.os_sms_send_demo_ucs2                  0x0000b608   Section       80  oa_sms.o(i.os_sms_send_demo_ucs2)
+    i.protocol_analyze                       0x0000b658   Section     4632  oa_app.o(i.protocol_analyze)
+    .constdata                               0x0000c870   Section      860  oa_app.o(.constdata)
+    __func__@oa_app_on_tone_play_req_0       0x0000ca70   Data          24  oa_app.o(.constdata)
+    __func__@oa_app_power_shutdown_0         0x0000ca88   Data          22  oa_app.o(.constdata)
+    __func__@oa_app_uart1_recv_0             0x0000ca9e   Data          18  oa_app.o(.constdata)
+    __func__@oa_app_uart2_recv_0             0x0000cab0   Data          18  oa_app.o(.constdata)
+    __func__@oa_app_uart3_recv_0             0x0000cac2   Data          18  oa_app.o(.constdata)
+    __func__@oa_app_execute_custom_at_cmd_0  0x0000cad4   Data          29  oa_app.o(.constdata)
+    __func__@lsl_factory_setting_timer_ind_0 0x0000caf1   Data          30  oa_app.o(.constdata)
+    __func__@oa_tst_eint_hisr_1              0x0000cb0f   Data          17  oa_app.o(.constdata)
+    __func__@oa_app_init_0                   0x0000cb20   Data          12  oa_app.o(.constdata)
+    __func__@my_process_service_0            0x0000cb2c   Data          19  oa_app.o(.constdata)
+    __func__@lsl_timer_485tx_off_ind_0       0x0000cb3f   Data          24  oa_app.o(.constdata)
+    __func__@lsl_uart_485_tx_0               0x0000cb57   Data          16  oa_app.o(.constdata)
+    __func__@protocol_analyze_0              0x0000cb67   Data          17  oa_app.o(.constdata)
+    .constdata                               0x0000cbcc   Section       36  oa_setting.o(.constdata)
+    __func__@oa_set_param_init_0             0x0000cbcc   Data          18  oa_setting.o(.constdata)
+    __func__@oa_set_param_save_0             0x0000cbde   Data          18  oa_setting.o(.constdata)
+    .constdata                               0x0000cbf0   Section       98  oa_sms.o(.constdata)
+    __func__@oa_sms_send_req_cb_0            0x0000cbf0   Data          19  oa_sms.o(.constdata)
+    .constdata                               0x0000cc54   Section      581  oa_soc.o(.constdata)
+    __func__@oa_soc_set_apn_cb_0             0x0000cc54   Data          18  oa_soc.o(.constdata)
+    __func__@oa_soc_state_check_1            0x0000cc66   Data          19  oa_soc.o(.constdata)
+    __func__@oa_soc_connect_req_0            0x0000cc79   Data          19  oa_soc.o(.constdata)
+    __func__@oa_soc_send_req_0               0x0000cc8c   Data          16  oa_soc.o(.constdata)
+    __func__@oa_soc_can_reconnect_again_0    0x0000cc9c   Data          27  oa_soc.o(.constdata)
+    __func__@oa_soc_close_req_0              0x0000ccb7   Data          17  oa_soc.o(.constdata)
+    __func__@oa_soc_gprs_recv_0              0x0000ccc8   Data          17  oa_soc.o(.constdata)
+    __func__@oa_soc_notify_ind_0             0x0000ccd9   Data          18  oa_soc.o(.constdata)
+    __func__@oa_soc_send_heartbeat_data_0    0x0000cceb   Data          27  oa_soc.o(.constdata)
+    __func__@lsl_client_gprs_datas_deal_0    0x0000cd06   Data          27  oa_soc.o(.constdata)
+    __func__@lsl_soc_send_req_0              0x0000cd21   Data          17  oa_soc.o(.constdata)
+    __func__@lsl_soc_close_req_0             0x0000cd32   Data          18  oa_soc.o(.constdata)
+    __func__@gprs_init_0                     0x0000cd44   Data          10  oa_soc.o(.constdata)
+    __func__@gprs_connect_0                  0x0000cd4e   Data          13  oa_soc.o(.constdata)
+    __func__@lsl_soc_notify_ind_0            0x0000ce01   Data          19  oa_soc.o(.constdata)
+    __func__@gprs_set_apn_cb_0               0x0000ce14   Data          16  oa_soc.o(.constdata)
+    .data                                    0x0000ce9c   Section       97  oa_app.o(.data)
+    b_baud_set                               0x0000ce9c   Data           1  oa_app.o(.data)
+    wait_485_flag                            0x0000ce9d   Data           1  oa_app.o(.data)
+    error_to_reset_cnt                       0x0000ce9e   Data           1  oa_app.o(.data)
+    block_send_retry                         0x0000ce9f   Data           1  oa_app.o(.data)
+    fixid_close_soc_flag                     0x0000cea0   Data           1  oa_app.o(.data)
+    cfg_tell_103                             0x0000cea1   Data           1  oa_app.o(.data)
+    first_reverse@oa_tst_eint_hisr_0         0x0000cea8   Data           1  oa_app.o(.data)
+    link_led                                 0x0000cea9   Data           1  oa_app.o(.data)
+    ring_led                                 0x0000ceaa   Data           1  oa_app.o(.data)
+    baud_temp                                0x0000ceb0   Data           4  oa_app.o(.data)
+    .data                                    0x0000cf00   Section       12  oa_app.o(.data)
+    .data                                    0x0000cf0c   Section       12  oa_app.o(.data)
+    .data                                    0x0000cf18   Section        9  oa_app.o(.data)
+    .data                                    0x0000cf24   Section      820  oa_setting.o(.data)
+    DefaultConfigT                           0x0000cf24   Data         820  oa_setting.o(.data)
+    .data                                    0x0000d258   Section       42  oa_soc.o(.data)
+    gp_result                                0x0000d258   Data           1  oa_soc.o(.data)
+    protocol_heart_pkt                       0x0000d260   Data          34  oa_soc.o(.data)
+    .bss                                     0x0000d284   Section     3708  oa_app.o(.bss)
+    imei_str                                 0x0000d284   Data          16  oa_app.o(.bss)
+    version_of_other_chip                    0x0000d294   Data          16  oa_app.o(.bss)
+    wait_485                                 0x0000d2a4   Data         256  oa_app.o(.bss)
+    .bss                                     0x0000e100   Section      820  oa_setting.o(.bss)
+    g_set_param                              0x0000e100   Data         820  oa_setting.o(.bss)
+    .bss                                     0x0000e434   Section    52796  oa_soc.o(.bss)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv2$ARM_ISAv5$M$E$P$J$S$PE$A:L22$X:L11$S22$IEEE1$IW$USESV6$~STKCKD$USESV7$~SHL$OSPACE$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __sigvec_lookup                           - Undefined Weak Reference
+    oa_user_dll_entry_dispatch_to_sys        0x00008001   Thumb Code    38  oa_app.o(OA_USER_ENTRY)
+    __aeabi_memcpy4                          0x00008034   ARM Code       0  rt_memcpy_w.o(.text)
+    __aeabi_memcpy8                          0x00008034   ARM Code       0  rt_memcpy_w.o(.text)
+    __rt_memcpy_w                            0x00008034   ARM Code     100  rt_memcpy_w.o(.text)
+    _memcpy_lastbytes_aligned                0x00008080   ARM Code       0  rt_memcpy_w.o(.text)
+    __aeabi_memclr4                          0x00008098   ARM Code       0  rt_memclr_w.o(.text)
+    __aeabi_memclr8                          0x00008098   ARM Code       0  rt_memclr_w.o(.text)
+    __rt_memclr_w                            0x00008098   ARM Code      84  rt_memclr_w.o(.text)
+    _memset_w                                0x0000809c   ARM Code       0  rt_memclr_w.o(.text)
+    __aeabi_idiv                             0x000080ec   ARM Code       0  aeabi_sdiv.o(.text)
+    __aeabi_idivmod                          0x000080ec   ARM Code     384  aeabi_sdiv.o(.text)
+    __ARM_switch8                            0x0000826c   ARM Code      24  switch8.o(.text)
+    __rt_switch8                             0x0000826c   ARM Code       0  switch8.o(.text)
+    __aeabi_uidiv                            0x00008284   ARM Code       0  aeabi_sdiv.o(.text_udiv)
+    __aeabi_uidivmod                         0x00008284   ARM Code      28  aeabi_sdiv.o(.text_udiv)
+    Long ARM to Thumb Veneer to OA_DEBUG_USER 0x000082a0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strcpy    0x000082a8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gprs_apn_init 0x000082b0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_create 0x000082b8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_module_restart 0x000082c0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strlen    0x000082c8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_connect 0x000082d0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_notify_ind_register 0x000082d8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_timer_stop 0x000082e0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_timer_start 0x000082e8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strncmp   0x000082f0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_send  0x000082f8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_close 0x00008300   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_close 0x00008308   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gpio_write 0x00008310   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_memset    0x00008318   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_memcpy    0x00008320   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_atoi      0x00008328   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sms_send_req 0x00008330   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_chset_convert 0x00008338   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_wstrlen   0x00008340   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_recv  0x00008348   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sleep     0x00008350   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strtoul   0x00008358   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_open 0x00008360   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_register_callback 0x00008368   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_set_read_delay 0x00008370   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_write 0x00008378   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_tcp_retransmit_times 0x00008380   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strchr    0x00008388   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gpio_init 0x00008390   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gpio_mode_setup 0x00008398   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_atf_rsp_callback_register 0x000083a0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_cust_cmd_register 0x000083a8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sms_rcv_ind_register 0x000083b0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_power_shutdown 0x000083b8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sim_network_is_valid 0x000083c0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_inital_csim_is_sms_ready 0x000083c8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to OA_DEBUG     0x000083d0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sram_noinit_get_buf 0x000083d8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sram_noinit_reset 0x000083e0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_nvram_read_reserve 0x000083e8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_sprintf   0x000083f0   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_get_imei  0x000083f8   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gprs_set_apn_req 0x00008400   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_nvram_write_reserve 0x00008408   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_uart_send_at_cmd_req 0x00008410   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_evshed_start 0x00008418   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_soc_ip_check 0x00008420   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_gpio_read 0x00008428   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_eint_set_polarity 0x00008430   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strncpy   0x00008438   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    Long ARM to Thumb Veneer to oa_strcat    0x00008440   ARM Code       8  anon$$obj.o(Veneer$$Code)
+    clear_hrt_dog_t                          0x00008449   Thumb Code     8  oa_app.o(i.clear_hrt_dog_t)
+    client_set_receive_callback              0x00008455   Thumb Code    20  oa_soc.o(i.client_set_receive_callback)
+    crc16_ccitt                              0x00008471   Thumb Code    42  oa_app.o(i.crc16_ccitt)
+    crc16_modbus                             0x000084a1   Thumb Code    60  oa_app.o(i.crc16_modbus)
+    gprs_connect                             0x000084e5   Thumb Code   232  oa_soc.o(i.gprs_connect)
+    gprs_init                                0x000086ed   Thumb Code    98  oa_soc.o(i.gprs_init)
+    gprs_set_apn_cb                          0x000087d9   Thumb Code    26  oa_soc.o(i.gprs_set_apn_cb)
+    heart_pkt_timer_ind                      0x00008829   Thumb Code    32  oa_soc.o(i.heart_pkt_timer_ind)
+    lsl_check_phone_binding                  0x00008851   Thumb Code    58  oa_sms.o(i.lsl_check_phone_binding)
+    lsl_client_gprs_datas_deal               0x00008895   Thumb Code   310  oa_soc.o(i.lsl_client_gprs_datas_deal)
+    lsl_debug_soc_send                       0x00008a6d   Thumb Code    28  oa_soc.o(i.lsl_debug_soc_send)
+    lsl_factory_setting_timer_ind            0x00008a8d   Thumb Code    42  oa_app.o(i.lsl_factory_setting_timer_ind)
+    lsl_link_led_timer_ind                   0x00008ac5   Thumb Code    66  oa_app.o(i.lsl_link_led_timer_ind)
+    lsl_param_clr_phone_num                  0x00008b15   Thumb Code    30  oa_setting.o(i.lsl_param_clr_phone_num)
+    lsl_param_get_auto_upload_time           0x00008b39   Thumb Code    12  oa_setting.o(i.lsl_param_get_auto_upload_time)
+    lsl_param_get_client_info                0x00008b49   Thumb Code    10  oa_setting.o(i.lsl_param_get_client_info)
+    lsl_param_get_heart_pkt_info             0x00008b59   Thumb Code    10  oa_setting.o(i.lsl_param_get_heart_pkt_info)
+    lsl_param_get_password                   0x00008b69   Thumb Code    10  oa_setting.o(i.lsl_param_get_password)
+    lsl_param_get_phone_table                0x00008b79   Thumb Code    10  oa_setting.o(i.lsl_param_get_phone_table)
+    lsl_param_get_uart2                      0x00008b89   Thumb Code    10  oa_setting.o(i.lsl_param_get_uart2)
+    lsl_param_get_virtual_id                 0x00008b99   Thumb Code    10  oa_setting.o(i.lsl_param_get_virtual_id)
+    lsl_param_set_auto_upload_time           0x00008ba9   Thumb Code    12  oa_setting.o(i.lsl_param_set_auto_upload_time)
+    lsl_param_set_domain                     0x00008bb9   Thumb Code    56  oa_setting.o(i.lsl_param_set_domain)
+    lsl_param_set_heart_pkt_info             0x00008bf5   Thumb Code    42  oa_setting.o(i.lsl_param_set_heart_pkt_info)
+    lsl_param_set_ipaddr                     0x00008c25   Thumb Code    56  oa_setting.o(i.lsl_param_set_ipaddr)
+    lsl_param_set_phone_table                0x00008c61   Thumb Code    44  oa_setting.o(i.lsl_param_set_phone_table)
+    lsl_param_set_psw                        0x00008c91   Thumb Code    40  oa_setting.o(i.lsl_param_set_psw)
+    lsl_param_set_uart2                      0x00008cbd   Thumb Code    18  oa_setting.o(i.lsl_param_set_uart2)
+    lsl_param_set_virtual_id                 0x00008cd5   Thumb Code    34  oa_setting.o(i.lsl_param_set_virtual_id)
+    lsl_ring_led_timer_ind                   0x00008cfd   Thumb Code    68  oa_app.o(i.lsl_ring_led_timer_ind)
+    lsl_sms_send_7bit                        0x00008d51   Thumb Code    26  oa_sms.o(i.lsl_sms_send_7bit)
+    lsl_sms_send_8bit                        0x00008d71   Thumb Code    26  oa_sms.o(i.lsl_sms_send_8bit)
+    lsl_sms_send_ucs2                        0x00008d91   Thumb Code    60  oa_sms.o(i.lsl_sms_send_ucs2)
+    lsl_soc_close_req                        0x00008dd1   Thumb Code    56  oa_soc.o(i.lsl_soc_close_req)
+    lsl_soc_notify_ind                       0x00008e2d   Thumb Code   424  oa_soc.o(i.lsl_soc_notify_ind)
+    lsl_soc_send_data                        0x00009219   Thumb Code     8  oa_soc.o(i.lsl_soc_send_data)
+    lsl_soc_send_heartbeat_data              0x00009221   Thumb Code   100  oa_soc.o(i.lsl_soc_send_heartbeat_data)
+    lsl_soc_send_req                         0x00009291   Thumb Code   126  oa_soc.o(i.lsl_soc_send_req)
+    lsl_timer_485tx_off_ind                  0x00009381   Thumb Code   204  oa_app.o(i.lsl_timer_485tx_off_ind)
+    lsl_timer_485tx_on_ind                   0x00009571   Thumb Code     2  oa_app.o(i.lsl_timer_485tx_on_ind)
+    lsl_uart_485_tx                          0x00009575   Thumb Code   206  oa_app.o(i.lsl_uart_485_tx)
+    my_process_service                       0x00009665   Thumb Code   546  oa_app.o(i.my_process_service)
+    oa_app_at_rsp_recv                       0x00009a21   Thumb Code   158  oa_app.o(i.oa_app_at_rsp_recv)
+    oa_app_execute_custom_at_cmd             0x00009af9   Thumb Code    24  oa_app.o(i.oa_app_execute_custom_at_cmd)
+    oa_app_hw_init                           0x00009b29   Thumb Code     2  oa_app.o(i.oa_app_hw_init)
+    oa_app_init                              0x00009b2d   Thumb Code   380  oa_app.o(i.oa_app_init)
+    oa_app_main                              0x00009e29   Thumb Code    60  oa_app.o(i.oa_app_main)
+    oa_app_on_tone_play_req                  0x00009eb9   Thumb Code    16  oa_app.o(i.oa_app_on_tone_play_req)
+    oa_app_power_shutdown                    0x00009ed5   Thumb Code    18  oa_app.o(i.oa_app_power_shutdown)
+    oa_app_scheduler_entry                   0x00009ef9   Thumb Code   124  oa_app.o(i.oa_app_scheduler_entry)
+    oa_app_uart1_recv                        0x00009ff1   Thumb Code    16  oa_app.o(i.oa_app_uart1_recv)
+    oa_app_uart2_recv                        0x0000a019   Thumb Code   240  oa_app.o(i.oa_app_uart2_recv)
+    oa_app_uart3_recv                        0x0000a1c5   Thumb Code    16  oa_app.o(i.oa_app_uart3_recv)
+    oa_create_ring_buffer_noinit             0x0000a1ed   Thumb Code    58  oa_soc.o(i.oa_create_ring_buffer_noinit)
+    oa_free_buffer_noinit                    0x0000a281   Thumb Code     2  oa_soc.o(i.oa_free_buffer_noinit)
+    oa_param_get_apninfo                     0x0000a285   Thumb Code    10  oa_setting.o(i.oa_param_get_apninfo)
+    oa_param_get_dtu_id                      0x0000a295   Thumb Code    10  oa_setting.o(i.oa_param_get_dtu_id)
+    oa_param_get_soc_addr                    0x0000a2a5   Thumb Code    10  oa_setting.o(i.oa_param_get_soc_addr)
+    oa_param_set_apninfo                     0x0000a2b5   Thumb Code    18  oa_setting.o(i.oa_param_set_apninfo)
+    oa_param_set_dtu_id                      0x0000a2cd   Thumb Code    50  oa_setting.o(i.oa_param_set_dtu_id)
+    oa_param_set_soc_addr                    0x0000a305   Thumb Code    18  oa_setting.o(i.oa_param_set_soc_addr)
+    oa_press_key_0_handle                    0x0000a31d   Thumb Code     2  oa_app.o(i.oa_press_key_0_handle)
+    oa_press_key_1_handle                    0x0000a31f   Thumb Code     2  oa_app.o(i.oa_press_key_1_handle)
+    oa_press_key_2_handle                    0x0000a321   Thumb Code     2  oa_app.o(i.oa_press_key_2_handle)
+    oa_query_buffer_noinit                   0x0000a323   Thumb Code    68  oa_soc.o(i.oa_query_buffer_noinit)
+    oa_read_buffer_noinit                    0x0000a367   Thumb Code    58  oa_soc.o(i.oa_read_buffer_noinit)
+    oa_set_param_check                       0x0000a3a1   Thumb Code    38  oa_setting.o(i.oa_set_param_check)
+    oa_set_param_cmd_parse                   0x0000a3d1   Thumb Code   588  oa_setting.o(i.oa_set_param_cmd_parse)
+    oa_set_param_init                        0x0000a6ad   Thumb Code    78  oa_setting.o(i.oa_set_param_init)
+    oa_set_param_save                        0x0000a741   Thumb Code    78  oa_setting.o(i.oa_set_param_save)
+    oa_sms_init                              0x0000a7f1   Thumb Code    18  oa_sms.o(i.oa_sms_init)
+    oa_sms_rcv_ind_handler                   0x0000a815   Thumb Code   462  oa_sms.o(i.oa_sms_rcv_ind_handler)
+    oa_sms_send_req_cb                       0x0000ac21   Thumb Code    26  oa_sms.o(i.oa_sms_send_req_cb)
+    oa_soc_can_reconnect_again               0x0000ac55   Thumb Code    18  oa_soc.o(i.oa_soc_can_reconnect_again)
+    oa_soc_close_req                         0x0000ac7d   Thumb Code    70  oa_soc.o(i.oa_soc_close_req)
+    oa_soc_connect_req                       0x0000acf1   Thumb Code   184  oa_soc.o(i.oa_soc_connect_req)
+    oa_soc_fill_addr_struct                  0x0000ae9d   Thumb Code    66  oa_soc.o(i.oa_soc_fill_addr_struct)
+    oa_soc_gprs_recv                         0x0000aee5   Thumb Code    36  oa_soc.o(i.oa_soc_gprs_recv)
+    oa_soc_init                              0x0000af25   Thumb Code    68  oa_soc.o(i.oa_soc_init)
+    oa_soc_notify_ind                        0x0000af7d   Thumb Code   224  oa_soc.o(i.oa_soc_notify_ind)
+    oa_soc_send_data_demo                    0x0000b175   Thumb Code    28  oa_soc.o(i.oa_soc_send_data_demo)
+    oa_soc_send_heartbeat_data               0x0000b1a5   Thumb Code    66  oa_soc.o(i.oa_soc_send_heartbeat_data)
+    oa_soc_send_req                          0x0000b215   Thumb Code   136  oa_soc.o(i.oa_soc_send_req)
+    oa_soc_set_apn_cb                        0x0000b311   Thumb Code    30  oa_soc.o(i.oa_soc_set_apn_cb)
+    oa_soc_start_heartbeat_timer             0x0000b355   Thumb Code    24  oa_soc.o(i.oa_soc_start_heartbeat_timer)
+    oa_soc_state_check                       0x0000b379   Thumb Code    96  oa_soc.o(i.oa_soc_state_check)
+    oa_tst_eint_hisr                         0x0000b41d   Thumb Code    72  oa_app.o(i.oa_tst_eint_hisr)
+    oa_write_buffer_force_noinit             0x0000b4b9   Thumb Code   154  oa_soc.o(i.oa_write_buffer_force_noinit)
+    oa_write_buffer_noinit                   0x0000b553   Thumb Code    78  oa_soc.o(i.oa_write_buffer_noinit)
+    os_sms_send_demo_7bit                    0x0000b5a1   Thumb Code    28  oa_sms.o(i.os_sms_send_demo_7bit)
+    os_sms_send_demo_8bit                    0x0000b5d5   Thumb Code    28  oa_sms.o(i.os_sms_send_demo_8bit)
+    os_sms_send_demo_ucs2                    0x0000b609   Thumb Code    56  oa_sms.o(i.os_sms_send_demo_ucs2)
+    protocol_analyze                         0x0000b659   Thumb Code  4500  oa_app.o(i.protocol_analyze)
+    crc16_1021_tab                           0x0000c870   Data         512  oa_app.o(.constdata)
+    g_oa_trace_level                         0x0000cea2   Data           1  oa_app.o(.data)
+    g_oa_trace_port                          0x0000cea3   Data           1  oa_app.o(.data)
+    g_oa_ps_port                             0x0000cea4   Data           1  oa_app.o(.data)
+    g_oa_tst_port                            0x0000cea5   Data           1  oa_app.o(.data)
+    sos_handle_polarity_0                    0x0000cea6   Data           1  oa_app.o(.data)
+    g_first_pullup_flag                      0x0000cea7   Data           1  oa_app.o(.data)
+    offline_cnt                              0x0000ceac   Data           4  oa_app.o(.data)
+    gSimStateT                               0x0000ceb4   Data           4  oa_app.o(.data)
+    retransmit_times                         0x0000ceb8   Data           4  oa_app.o(.data)
+    gUart485DatT                             0x0000cebc   Data           8  oa_app.o(.data)
+    OA_VERSION_NO                            0x0000cec4   Data           9  oa_app.o(.data)
+    LSL_WEICHEN_COPYRIGHT                    0x0000cecd   Data          24  oa_app.o(.data)
+    g_uart2_port_setting                     0x0000cee8   Data          12  oa_app.o(.data)
+    eint_gpio_map_tb                         0x0000cef4   Data           9  oa_app.o(.data)
+    g_uart1_port_setting                     0x0000cf00   Data          12  oa_app.o(.data)
+    g_uart3_port_setting                     0x0000cf0c   Data          12  oa_app.o(.data)
+    eint_data_map_tb                         0x0000cf18   Data           9  oa_app.o(.data)
+    hrt_dog_t                                0x0000d25c   Data           4  oa_soc.o(.data)
+    gModuleConfigT                           0x0000d3a4   Data         384  oa_app.o(.bss)
+    gModuleStateT                            0x0000d524   Data         268  oa_app.o(.bss)
+    gClientStateT                            0x0000d630   Data        2240  oa_app.o(.bss)
+    gSmsStateT                               0x0000def0   Data         528  oa_app.o(.bss)
+    gprs_rx_buffer                           0x0000e434   Data       30001  oa_soc.o(.bss)
+    gprs_tx_buffer                           0x00015965   Data       20481  oa_soc.o(.bss)
+    g_soc_context                            0x0001a968   Data        2312  oa_soc.o(.bss)
+    oa_api_begin                             0x10021001   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strlen                                0x10021003   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strcpy                                0x1002100b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strlcpy                               0x10021013   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strncpy                               0x1002101b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strcat                                0x10021023   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strlcat                               0x1002102b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strncat                               0x10021033   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strcmp                                0x1002103b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strncmp                               0x10021043   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strrchr                               0x1002104b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strstr                                0x10021053   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strchr                                0x1002105b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strtol                                0x10021063   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strtoul                               0x1002106b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_strtolower                            0x10021073   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_0                         0x1002107b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_1                         0x10021083   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_2                         0x1002108b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_3                         0x10021093   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_4                         0x1002109b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_5                         0x100210a3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_str_reserve_6                         0x100210ab   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_is_digit_str                          0x100210b3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_is_phone_addr_str                     0x100210bf   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrlen                               0x100210cb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrcpy                               0x100210d3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrncpy                              0x100210db   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrcmp                               0x100210e3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrncmp                              0x100210eb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrcat                               0x100210f3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrncat                              0x100210fb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrchr                               0x10021103   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_wstrrchr                              0x1002110b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_ascii2unicode                         0x10021113   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_ascii2unicodeN                        0x1002111b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_unicode2ascii                         0x10021123   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_unicode2asciiN                        0x1002112b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_chset_convert                         0x10021133   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_malloc                                0x10021143   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_free                                  0x1002114b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_med_malloc                            0x10021153   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_med_free                              0x1002115b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_memcmp                                0x10021163   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_memcpy                                0x1002116b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_memset                                0x10021173   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_memchr                                0x1002117b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_0                         0x10021183   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_1                         0x1002118b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_2                         0x10021193   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_3                         0x1002119b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_4                         0x100211a3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_5                         0x100211ab   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_6                         0x100211b3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_mem_reserve_7                         0x100211bb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fcreate                               0x100211c3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fopen                                 0x100211cb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fopen_immediate_write                 0x100211d3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fseek                                 0x100211db   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fclose                                0x100211e3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fread                                 0x100211eb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fwrite                                0x100211f3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fdelete                               0x100211fb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fsize                                 0x10021203   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_frename                               0x1002120b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fposition                             0x10021213   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fxdelete                              0x1002121b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fcreateDir                            0x10021223   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fremoveDir                            0x1002122b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_erase_rawdisk_block                   0x10021233   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_read_rawdisk_data                     0x1002123b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_write_rawdisk_data                    0x10021243   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_file_reserve_3                        0x1002124b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_file_reserve_4                        0x10021253   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_file_reserve_5                        0x1002125b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_file_reserve_6                        0x10021263   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_file_reserve_7                        0x1002126b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_atoi                                  0x10021273   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_atof                                  0x1002127b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_itoa                                  0x10021283   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_srand                                 0x1002128b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_rand                                  0x10021293   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_abs                                   0x1002129b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sin                                   0x100212a3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_cos                                   0x100212ab   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_tan                                   0x100212b3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sinh                                  0x100212bb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_cosh                                  0x100212c3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_tanh                                  0x100212cb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_asin                                  0x100212d3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_acos                                  0x100212db   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_atan                                  0x100212e3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_atan2                                 0x100212eb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_exp                                   0x100212f3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_log                                   0x100212fb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_log10                                 0x10021303   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_pow                                   0x1002130b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sqrt                                  0x10021313   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fabs                                  0x1002131b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_ldexp                                 0x10021323   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_frexp                                 0x1002132b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_modf                                  0x10021333   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_fmod                                  0x1002133b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_0                        0x10021343   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_1                        0x1002134b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_2                        0x10021353   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_3                        0x1002135b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_4                        0x10021363   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_5                        0x1002136b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_6                        0x10021373   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_math_reserve_7                        0x1002137b   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sprintf                               0x10021383   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_snprintf                              0x10021397   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gps_recv_data_callback                0x100213a5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_play_req_tone_register                0x100213ad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_cust_cmd_register                     0x100213b5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_trace_level_and_port              0x100213bd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_speech_volume                     0x100213c9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_set_aud_path                    0x100213d5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_cfg_mic_path                    0x100213e1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_play_id                         0x100213ed   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_stop_id                         0x100213f5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_play_file                       0x100213fd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_stop_file                       0x10021405   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_pause                           0x1002140d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_resume                          0x10021415   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_audio_stop_all                        0x1002141d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_tts_stream_play                       0x10021425   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_mode_setup                       0x1002142d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_init                             0x10021435   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_pull_selhigh                     0x1002143d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_pull_setup                       0x10021445   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_read                             0x1002144d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpio_write                            0x10021455   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_registration                     0x1002145d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_set_debounce                     0x1002146d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_set_polarity                     0x10021475   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_set_sensitivity                  0x1002147d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_enable                           0x10021485   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_eint_disable                          0x1002148d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_init                              0x10021495   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_start                             0x1002149d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_stop                              0x100214a5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_write_byte                        0x100214ad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_read_byte                         0x100214b9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_read_bytes                        0x100214c5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_iic_write_bytes                       0x100214d1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_spi_init                              0x100214dd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_spi_cs_en                             0x100214e5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_spi_cs_dis                            0x100214ed   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_spi_read_data                         0x100214f5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_spi_write_data                        0x10021501   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_i2c_open                           0x10021509   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_i2c_Configure                      0x10021511   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_i2c_control                        0x10021519   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_i2c_close                          0x10021521   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_open                           0x10021529   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_close                          0x10021531   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_configure                      0x1002153d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_write                          0x10021549   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_read                           0x1002155d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_readwrite                      0x10021571   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_power_ctrl                     0x1002158d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_ioctl                          0x10021599   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_wr_buf_reset                   0x100215a5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_spi_rd_buf_reset                   0x100215ad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_hw_spi_wr_buf                     0x100215b5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_hw_spi_rd_buf                     0x100215bd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_hw_spi_wr_buf_size                0x100215c5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_hw_spi_rd_buf_size                0x100215cd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_0                          0x100215d5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_1                          0x100215dd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_2                          0x100215e5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_3                          0x100215ed   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_4                          0x100215f5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_5                          0x100215fd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_6                          0x10021605   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hw_reserve_7                          0x1002160d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpt_open                              0x10021615   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gpt_close                             0x1002161d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_dcl_hgpt_control                      0x10021629   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_dcl_hgpt_register_callback            0x10021635   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gprs_apn_init                         0x10021641   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gprs_set_apn_req                      0x10021649   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gprs_detach_req_dummy                 0x10021651   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gprs_attach_req_dummy                 0x10021659   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_notify_ind_register_dummy         0x10021661   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_notify_ind_register               0x10021669   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_create                            0x10021671   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_connect                           0x1002167d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_gethostbyname_dummy               0x10021689   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_getsockaddr                       0x10021695   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_close                             0x100216a1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_recv                              0x100216a9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_shutdown                          0x100216b1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_send                              0x100216b9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_sendto                            0x100216c1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_getlocalip                        0x100216d1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_bind                              0x100216d9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_listen                            0x100216e1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_accept                            0x100216e9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_ip_check                          0x100216f1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_setsockopt                        0x100216f9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_is_in_call                            0x10021705   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_tcp_retransmit_times              0x10021711   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_get_host_and_connect              0x10021729   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_0                         0x10021731   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_1                         0x10021739   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_2                         0x10021741   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_3                         0x10021749   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_4                         0x10021751   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_5                         0x10021759   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_6                         0x10021761   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_soc_reserve_7                         0x10021769   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sim_network_is_valid                  0x10021771   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_inital_csim_is_sms_ready              0x1002177d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_send_at_cmd_req                  0x10021789   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_atf_rsp_callback_register             0x10021791   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_is_uart_need_reset_switch             0x10021799   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_set_at_tst_port                  0x100217a5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_switch_at_port                   0x100217a9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_switch_tst_port                  0x100217ad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gps_power_on                          0x100217b1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gps_shutdown                          0x100217b9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_gps_nmeadata_recv_register            0x100217c1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_bt_spp_receive_data_register          0x100217c9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_bt_spp_write                          0x100217d1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sram_noinit_reset                     0x100217d9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sram_noinit_get_size                  0x100217e1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sram_noinit_get_buf                   0x100217e9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_time_stamp                        0x100217f1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_time                              0x100217f9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_time                              0x10021801   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_date_utc_to_rtc                       0x10021809   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_spof_data                         0x10021811   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_alm_data                          0x10021821   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sleep                                 0x1002183d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_adc_get_vbat_voltage                  0x10021845   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_adc_get_data                          0x1002184d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_battery_is_charger_connected          0x10021855   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_enable_low_power_sleep                0x10021861   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_make_call                             0x10021869   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_answer_calls                          0x10021871   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_hang_up_calls                         0x10021879   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_current_call_state                0x10021881   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_dtmf_detect_register                  0x10021889   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_module_restart                        0x10021891   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_power_shutdown                        0x10021899   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_nvram_reserve_init                    0x100218a3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_nvram_access_record_ind               0x100218ab   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_nvram_read_reserve                    0x100218bb   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_nvram_write_reserve                   0x100218c3   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sms_send_pdu_req                      0x100218cf   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_1                         0x100218d7   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_2                         0x100218df   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_3                         0x100218e7   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_4                         0x100218ef   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_5                         0x100218f7   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_6                         0x100218ff   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sys_reserve_7                         0x10021907   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_trace_init                            0x1002190f   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    OA_DEBUG                                 0x10021917   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    OA_DEBUG_USER                            0x10021967   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    OA_DEBUG_L1                              0x100219bd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    OA_DEBUG_L2                              0x10021a09   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    OA_DEBUG_L3                              0x10021a55   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sms_send_list_init                    0x10021aa1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sms_send_req                          0x10021aa9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_sms_rcv_ind_register                  0x10021ab9   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_task_info_g                       0x10021ac1   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_is_reading_cal                    0x10021ac7   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_version                               0x10021acd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_timer_start                           0x10021ad5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_timer_stop                            0x10021add   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_evshed_start                          0x10021ae5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_evshed_stop                           0x10021aed   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_register_callback                0x10021af5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_set_read_delay                   0x10021afd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_open                             0x10021b05   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_close                            0x10021b0d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_purge                            0x10021b15   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_write                            0x10021b1d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_uart_write_nb                         0x10021b25   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_key_register                          0x10021b2d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_key_unregister                        0x10021b35   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_ftp_rsp_register                      0x10021b3d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_start_ftp_upgrade                     0x10021b45   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_imei                              0x10021b4d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_get_chip_id                           0x10021b55   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_open_network_led                      0x10021b5d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_close_network_led                     0x10021b65   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_set_network_led_gpio                  0x10021b6d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_pwm_clk_init                          0x10021b75   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_pwm_start                             0x10021b7d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_pwm_stop                              0x10021b85   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_query_tcpip_no_ack                    0x10021b8d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_network_get_signal_level              0x10021b95   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_network_get_location_info             0x10021b9d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy3                        0x10021ba5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy4                        0x10021bad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy5                        0x10021bb5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy6                        0x10021bbd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy7                        0x10021bc5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy8                        0x10021bcd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy9                        0x10021bd5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy10                       0x10021bdd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy11                       0x10021be5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy12                       0x10021bed   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy13                       0x10021bf5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy14                       0x10021bfd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy15                       0x10021c05   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy16                       0x10021c0d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy17                       0x10021c15   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy18                       0x10021c1d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy19                       0x10021c25   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy20                       0x10021c2d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy21                       0x10021c35   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy22                       0x10021c3d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy23                       0x10021c45   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy24                       0x10021c4d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy25                       0x10021c55   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy26                       0x10021c5d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy27                       0x10021c65   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy28                       0x10021c6d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy29                       0x10021c75   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy30                       0x10021c7d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy31                       0x10021c85   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy32                       0x10021c8d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy33                       0x10021c95   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy34                       0x10021c9d   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy35                       0x10021ca5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy36                       0x10021cad   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy37                       0x10021cb5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy38                       0x10021cbd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy39                       0x10021cc5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_reserve_dummy40                       0x10021ccd   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    oa_api_end                               0x10021cd5   Thumb Code     0  ~OPENATLIB.sym ABSOLUTE
+    Speech_Input_FIR_Coeff                   0x10021ce8   Data           0  ~OPENATLIB.sym ABSOLUTE
+    Speech_Output_FIR_Coeff                  0x10021f04   Data           0  ~OPENATLIB.sym ABSOLUTE
+    NVRAM_EF_CUST_ACOUSTIC_DATA_DEFAULT      0x10022120   Data           0  ~OPENATLIB.sym ABSOLUTE
+
+
+================================================================================
+
+Memory Map of the image
+
+  Image entry point : Not specified.
+
+  Load Region OA_ALL (Base: 0x00008000, Size: 0x00005284, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region OA_CODE (Base: 0x00008000, Size: 0x00013270, Max: 0x00040000, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00008000   0x00000034   Code   RO           27    OA_USER_ENTRY       oa_app.o
+    0x00008034   0x00000064   Code   RO          645    .text               rt_memcpy_w.o(c_5.l)
+    0x00008098   0x00000054   Code   RO          647    .text               rt_memclr_w.o(c_5.l)
+    0x000080ec   0x00000180   Code   RO          649    .text               aeabi_sdiv.o(c_5.l)
+    0x0000826c   0x00000018   Code   RO          665    .text               switch8.o(h_5.l)
+    0x00008284   0x0000001c   Code   RO          650    .text_udiv          aeabi_sdiv.o(c_5.l)
+    0x000082a0   0x00000008   Ven    RO          711    Veneer$$Code        anon$$obj.o
+    0x000082a8   0x00000008   Ven    RO          712    Veneer$$Code        anon$$obj.o
+    0x000082b0   0x00000008   Ven    RO          713    Veneer$$Code        anon$$obj.o
+    0x000082b8   0x00000008   Ven    RO          714    Veneer$$Code        anon$$obj.o
+    0x000082c0   0x00000008   Ven    RO          715    Veneer$$Code        anon$$obj.o
+    0x000082c8   0x00000008   Ven    RO          716    Veneer$$Code        anon$$obj.o
+    0x000082d0   0x00000008   Ven    RO          717    Veneer$$Code        anon$$obj.o
+    0x000082d8   0x00000008   Ven    RO          718    Veneer$$Code        anon$$obj.o
+    0x000082e0   0x00000008   Ven    RO          719    Veneer$$Code        anon$$obj.o
+    0x000082e8   0x00000008   Ven    RO          720    Veneer$$Code        anon$$obj.o
+    0x000082f0   0x00000008   Ven    RO          721    Veneer$$Code        anon$$obj.o
+    0x000082f8   0x00000008   Ven    RO          722    Veneer$$Code        anon$$obj.o
+    0x00008300   0x00000008   Ven    RO          723    Veneer$$Code        anon$$obj.o
+    0x00008308   0x00000008   Ven    RO          724    Veneer$$Code        anon$$obj.o
+    0x00008310   0x00000008   Ven    RO          725    Veneer$$Code        anon$$obj.o
+    0x00008318   0x00000008   Ven    RO          726    Veneer$$Code        anon$$obj.o
+    0x00008320   0x00000008   Ven    RO          727    Veneer$$Code        anon$$obj.o
+    0x00008328   0x00000008   Ven    RO          728    Veneer$$Code        anon$$obj.o
+    0x00008330   0x00000008   Ven    RO          729    Veneer$$Code        anon$$obj.o
+    0x00008338   0x00000008   Ven    RO          730    Veneer$$Code        anon$$obj.o
+    0x00008340   0x00000008   Ven    RO          731    Veneer$$Code        anon$$obj.o
+    0x00008348   0x00000008   Ven    RO          732    Veneer$$Code        anon$$obj.o
+    0x00008350   0x00000008   Ven    RO          733    Veneer$$Code        anon$$obj.o
+    0x00008358   0x00000008   Ven    RO          734    Veneer$$Code        anon$$obj.o
+    0x00008360   0x00000008   Ven    RO          735    Veneer$$Code        anon$$obj.o
+    0x00008368   0x00000008   Ven    RO          736    Veneer$$Code        anon$$obj.o
+    0x00008370   0x00000008   Ven    RO          737    Veneer$$Code        anon$$obj.o
+    0x00008378   0x00000008   Ven    RO          738    Veneer$$Code        anon$$obj.o
+    0x00008380   0x00000008   Ven    RO          739    Veneer$$Code        anon$$obj.o
+    0x00008388   0x00000008   Ven    RO          740    Veneer$$Code        anon$$obj.o
+    0x00008390   0x00000008   Ven    RO          741    Veneer$$Code        anon$$obj.o
+    0x00008398   0x00000008   Ven    RO          742    Veneer$$Code        anon$$obj.o
+    0x000083a0   0x00000008   Ven    RO          743    Veneer$$Code        anon$$obj.o
+    0x000083a8   0x00000008   Ven    RO          744    Veneer$$Code        anon$$obj.o
+    0x000083b0   0x00000008   Ven    RO          745    Veneer$$Code        anon$$obj.o
+    0x000083b8   0x00000008   Ven    RO          746    Veneer$$Code        anon$$obj.o
+    0x000083c0   0x00000008   Ven    RO          747    Veneer$$Code        anon$$obj.o
+    0x000083c8   0x00000008   Ven    RO          748    Veneer$$Code        anon$$obj.o
+    0x000083d0   0x00000008   Ven    RO          749    Veneer$$Code        anon$$obj.o
+    0x000083d8   0x00000008   Ven    RO          750    Veneer$$Code        anon$$obj.o
+    0x000083e0   0x00000008   Ven    RO          751    Veneer$$Code        anon$$obj.o
+    0x000083e8   0x00000008   Ven    RO          752    Veneer$$Code        anon$$obj.o
+    0x000083f0   0x00000008   Ven    RO          753    Veneer$$Code        anon$$obj.o
+    0x000083f8   0x00000008   Ven    RO          754    Veneer$$Code        anon$$obj.o
+    0x00008400   0x00000008   Ven    RO          755    Veneer$$Code        anon$$obj.o
+    0x00008408   0x00000008   Ven    RO          756    Veneer$$Code        anon$$obj.o
+    0x00008410   0x00000008   Ven    RO          757    Veneer$$Code        anon$$obj.o
+    0x00008418   0x00000008   Ven    RO          758    Veneer$$Code        anon$$obj.o
+    0x00008420   0x00000008   Ven    RO          759    Veneer$$Code        anon$$obj.o
+    0x00008428   0x00000008   Ven    RO          760    Veneer$$Code        anon$$obj.o
+    0x00008430   0x00000008   Ven    RO          761    Veneer$$Code        anon$$obj.o
+    0x00008438   0x00000008   Ven    RO          762    Veneer$$Code        anon$$obj.o
+    0x00008440   0x00000008   Ven    RO          763    Veneer$$Code        anon$$obj.o
+    0x00008448   0x0000000c   Code   RO           25    i.clear_hrt_dog_t   oa_app.o
+    0x00008454   0x0000001c   Code   RO          461    i.client_set_receive_callback  oa_soc.o
+    0x00008470   0x00000030   Code   RO            2    i.crc16_ccitt       oa_app.o
+    0x000084a0   0x00000044   Code   RO            1    i.crc16_modbus      oa_app.o
+    0x000084e4   0x00000208   Code   RO          471    i.gprs_connect      oa_soc.o
+    0x000086ec   0x000000ec   Code   RO          470    i.gprs_init         oa_soc.o
+    0x000087d8   0x00000050   Code   RO          472    i.gprs_set_apn_cb   oa_soc.o
+    0x00008828   0x00000028   Code   RO          468    i.heart_pkt_timer_ind  oa_soc.o
+    0x00008850   0x00000044   Code   RO          377    i.lsl_check_phone_binding  oa_sms.o
+    0x00008894   0x000001d8   Code   RO          464    i.lsl_client_gprs_datas_deal  oa_soc.o
+    0x00008a6c   0x00000020   Code   RO          467    i.lsl_debug_soc_send  oa_soc.o
+    0x00008a8c   0x00000038   Code   RO           14    i.lsl_factory_setting_timer_ind  oa_app.o
+    0x00008ac4   0x00000050   Code   RO           20    i.lsl_link_led_timer_ind  oa_app.o
+    0x00008b14   0x00000024   Code   RO          217    i.lsl_param_clr_phone_num  oa_setting.o
+    0x00008b38   0x00000010   Code   RO          226    i.lsl_param_get_auto_upload_time  oa_setting.o
+    0x00008b48   0x00000010   Code   RO          220    i.lsl_param_get_client_info  oa_setting.o
+    0x00008b58   0x00000010   Code   RO          222    i.lsl_param_get_heart_pkt_info  oa_setting.o
+    0x00008b68   0x00000010   Code   RO          221    i.lsl_param_get_password  oa_setting.o
+    0x00008b78   0x00000010   Code   RO          224    i.lsl_param_get_phone_table  oa_setting.o
+    0x00008b88   0x00000010   Code   RO          225    i.lsl_param_get_uart2  oa_setting.o
+    0x00008b98   0x00000010   Code   RO          223    i.lsl_param_get_virtual_id  oa_setting.o
+    0x00008ba8   0x00000010   Code   RO          219    i.lsl_param_set_auto_upload_time  oa_setting.o
+    0x00008bb8   0x0000003c   Code   RO          212    i.lsl_param_set_domain  oa_setting.o
+    0x00008bf4   0x00000030   Code   RO          214    i.lsl_param_set_heart_pkt_info  oa_setting.o
+    0x00008c24   0x0000003c   Code   RO          213    i.lsl_param_set_ipaddr  oa_setting.o
+    0x00008c60   0x00000030   Code   RO          216    i.lsl_param_set_phone_table  oa_setting.o
+    0x00008c90   0x0000002c   Code   RO          211    i.lsl_param_set_psw  oa_setting.o
+    0x00008cbc   0x00000018   Code   RO          218    i.lsl_param_set_uart2  oa_setting.o
+    0x00008cd4   0x00000028   Code   RO          215    i.lsl_param_set_virtual_id  oa_setting.o
+    0x00008cfc   0x00000054   Code   RO           21    i.lsl_ring_led_timer_ind  oa_app.o
+    0x00008d50   0x00000020   Code   RO          374    i.lsl_sms_send_7bit  oa_sms.o
+    0x00008d70   0x00000020   Code   RO          375    i.lsl_sms_send_8bit  oa_sms.o
+    0x00008d90   0x00000040   Code   RO          376    i.lsl_sms_send_ucs2  oa_sms.o
+    0x00008dd0   0x0000005c   Code   RO          462    i.lsl_soc_close_req  oa_soc.o
+    0x00008e2c   0x000003ec   Code   RO          469    i.lsl_soc_notify_ind  oa_soc.o
+    0x00009218   0x00000008   Code   RO          466    i.lsl_soc_send_data  oa_soc.o
+    0x00009220   0x00000070   Code   RO          465    i.lsl_soc_send_heartbeat_data  oa_soc.o
+    0x00009290   0x000000f0   Code   RO          463    i.lsl_soc_send_req  oa_soc.o
+    0x00009380   0x000001f0   Code   RO            9    i.lsl_timer_485tx_off_ind  oa_app.o
+    0x00009570   0x00000002   Code   RO           26    i.lsl_timer_485tx_on_ind  oa_app.o
+    0x00009572   0x00000002   PAD
+    0x00009574   0x000000f0   Code   RO           10    i.lsl_uart_485_tx   oa_app.o
+    0x00009664   0x000003bc   Code   RO           18    i.my_process_service  oa_app.o
+    0x00009a20   0x000000d8   Code   RO           12    i.oa_app_at_rsp_recv  oa_app.o
+    0x00009af8   0x00000030   Code   RO           11    i.oa_app_execute_custom_at_cmd  oa_app.o
+    0x00009b28   0x00000002   Code   RO           24    i.oa_app_hw_init    oa_app.o
+    0x00009b2a   0x00000002   PAD
+    0x00009b2c   0x000002fc   Code   RO           13    i.oa_app_init       oa_app.o
+    0x00009e28   0x00000090   Code   RO           22    i.oa_app_main       oa_app.o
+    0x00009eb8   0x0000001c   Code   RO            3    i.oa_app_on_tone_play_req  oa_app.o
+    0x00009ed4   0x00000024   Code   RO            4    i.oa_app_power_shutdown  oa_app.o
+    0x00009ef8   0x000000f8   Code   RO           19    i.oa_app_scheduler_entry  oa_app.o
+    0x00009ff0   0x00000028   Code   RO            8    i.oa_app_uart1_recv  oa_app.o
+    0x0000a018   0x000001ac   Code   RO           16    i.oa_app_uart2_recv  oa_app.o
+    0x0000a1c4   0x00000028   Code   RO           17    i.oa_app_uart3_recv  oa_app.o
+    0x0000a1ec   0x00000094   Code   RO          452    i.oa_create_ring_buffer_noinit  oa_soc.o
+    0x0000a280   0x00000002   Code   RO          459    i.oa_free_buffer_noinit  oa_soc.o
+    0x0000a282   0x00000002   PAD
+    0x0000a284   0x00000010   Code   RO          204    i.oa_param_get_apninfo  oa_setting.o
+    0x0000a294   0x00000010   Code   RO          207    i.oa_param_get_dtu_id  oa_setting.o
+    0x0000a2a4   0x00000010   Code   RO          210    i.oa_param_get_soc_addr  oa_setting.o
+    0x0000a2b4   0x00000018   Code   RO          205    i.oa_param_set_apninfo  oa_setting.o
+    0x0000a2cc   0x00000038   Code   RO          208    i.oa_param_set_dtu_id  oa_setting.o
+    0x0000a304   0x00000018   Code   RO          206    i.oa_param_set_soc_addr  oa_setting.o
+    0x0000a31c   0x00000002   Code   RO            5    i.oa_press_key_0_handle  oa_app.o
+    0x0000a31e   0x00000002   Code   RO            6    i.oa_press_key_1_handle  oa_app.o
+    0x0000a320   0x00000002   Code   RO            7    i.oa_press_key_2_handle  oa_app.o
+    0x0000a322   0x00000044   Code   RO          446    i.oa_query_buffer_noinit  oa_soc.o
+    0x0000a366   0x0000003a   Code   RO          447    i.oa_read_buffer_noinit  oa_soc.o
+    0x0000a3a0   0x00000030   Code   RO          203    i.oa_set_param_check  oa_setting.o
+    0x0000a3d0   0x000002dc   Code   RO          209    i.oa_set_param_cmd_parse  oa_setting.o
+    0x0000a6ac   0x00000094   Code   RO          201    i.oa_set_param_init  oa_setting.o
+    0x0000a740   0x000000b0   Code   RO          202    i.oa_set_param_save  oa_setting.o
+    0x0000a7f0   0x00000024   Code   RO          369    i.oa_sms_init       oa_sms.o
+    0x0000a814   0x0000040c   Code   RO          378    i.oa_sms_rcv_ind_handler  oa_sms.o
+    0x0000ac20   0x00000034   Code   RO          370    i.oa_sms_send_req_cb  oa_sms.o
+    0x0000ac54   0x00000028   Code   RO          444    i.oa_soc_can_reconnect_again  oa_soc.o
+    0x0000ac7c   0x00000074   Code   RO          445    i.oa_soc_close_req  oa_soc.o
+    0x0000acf0   0x000001ac   Code   RO          455    i.oa_soc_connect_req  oa_soc.o
+    0x0000ae9c   0x00000048   Code   RO          451    i.oa_soc_fill_addr_struct  oa_soc.o
+    0x0000aee4   0x00000040   Code   RO          449    i.oa_soc_gprs_recv  oa_soc.o
+    0x0000af24   0x00000058   Code   RO          453    i.oa_soc_init       oa_soc.o
+    0x0000af7c   0x000001f8   Code   RO          450    i.oa_soc_notify_ind  oa_soc.o
+    0x0000b174   0x00000030   Code   RO          458    i.oa_soc_send_data_demo  oa_soc.o
+    0x0000b1a4   0x00000070   Code   RO          442    i.oa_soc_send_heartbeat_data  oa_soc.o
+    0x0000b214   0x000000fc   Code   RO          448    i.oa_soc_send_req   oa_soc.o
+    0x0000b310   0x00000044   Code   RO          454    i.oa_soc_set_apn_cb  oa_soc.o
+    0x0000b354   0x00000024   Code   RO          443    i.oa_soc_start_heartbeat_timer  oa_soc.o
+    0x0000b378   0x000000a4   Code   RO          456    i.oa_soc_state_check  oa_soc.o
+    0x0000b41c   0x0000009c   Code   RO           23    i.oa_tst_eint_hisr  oa_app.o
+    0x0000b4b8   0x0000009a   Code   RO          457    i.oa_write_buffer_force_noinit  oa_soc.o
+    0x0000b552   0x0000004e   Code   RO          460    i.oa_write_buffer_noinit  oa_soc.o
+    0x0000b5a0   0x00000034   Code   RO          371    i.os_sms_send_demo_7bit  oa_sms.o
+    0x0000b5d4   0x00000034   Code   RO          372    i.os_sms_send_demo_8bit  oa_sms.o
+    0x0000b608   0x00000050   Code   RO          373    i.os_sms_send_demo_ucs2  oa_sms.o
+    0x0000b658   0x00001218   Code   RO           15    i.protocol_analyze  oa_app.o
+    0x0000c870   0x0000035c   Data   RO           29    .constdata          oa_app.o
+    0x0000cbcc   0x00000024   Data   RO          228    .constdata          oa_setting.o
+    0x0000cbf0   0x00000062   Data   RO          379    .constdata          oa_sms.o
+    0x0000cc52   0x00000002   PAD
+    0x0000cc54   0x00000245   Data   RO          474    .constdata          oa_soc.o
+    0x0000ce99   0x00000003   PAD
+    0x0000ce9c   0x00000061   Data   RW           28    .data               oa_app.o
+    0x0000cefd   0x00000003   PAD
+    0x0000cf00   0x0000000c   Data   RW           31    .data               oa_app.o
+    0x0000cf0c   0x0000000c   Data   RW           32    .data               oa_app.o
+    0x0000cf18   0x00000009   Data   RW           33    .data               oa_app.o
+    0x0000cf21   0x00000003   PAD
+    0x0000cf24   0x00000334   Data   RW          227    .data               oa_setting.o
+    0x0000d258   0x0000002a   Data   RW          473    .data               oa_soc.o
+    0x0000d282   0x00000002   PAD
+    0x0000d284   0x00000e7c   Zero   RW           30    .bss                oa_app.o
+    0x0000e100   0x00000334   Zero   RW          229    .bss                oa_setting.o
+    0x0000e434   0x0000ce3c   Zero   RW          475    .bss                oa_soc.o
+
+
+================================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+      8882       2876        860        130       3708      50652   oa_app.o
+      1744        442         36        820        820      21214   oa_setting.o
+      1504        738         98          0          0      10884   oa_sms.o
+      5364       2462        581         42      52796      26811   oa_soc.o
+
+    ------------------------------------------------------------------------
+     17924       6730       1580       1000      57324     109564   Object Totals
+       424        212          0          0          0          0   (incl. Generated)
+         6          0          5          8          0          3   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       412          0          0          0          0          0   aeabi_sdiv.o
+        84          0          0          0          0          0   rt_memclr_w.o
+       100          0          0          0          0          0   rt_memcpy_w.o
+        24          0          0          0          0          0   switch8.o
+
+    ------------------------------------------------------------------------
+       620          0          0          0          0          0   Library Totals
+         0          0          0          0          0          0   (incl. Padding)
+
+    ------------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       596          0          0          0          0          0   c_5.l
+        24          0          0          0          0          0   h_5.l
+
+    ------------------------------------------------------------------------
+       620          0          0          0          0          0   Library Totals
+
+    ------------------------------------------------------------------------
+
+================================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+     18544       6730       1580       1000      57324     109564   Grand Totals
+     18544       6730       1580       1000      57324     109564   ELF Image Totals
+     18544       6730       1580       1000          0          0   ROM Totals
+
+================================================================================
+
+    Total RO  Size (Code + RO Data)                20124 (  19.65kB)
+    Total RW  Size (RW Data + ZI Data)             58324 (  56.96kB)
+    Total ROM Size (Code + RO Data + RW Data)      21124 (  20.63kB)
+
+================================================================================
+

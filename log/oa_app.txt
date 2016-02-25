@@ -1,0 +1,502 @@
+"inc\oa_type.H", line 1423: Warning:  #64-D: declaration does not declare anything
+     oa_i2c_ctrl_single_write_t; /* Single write of blocking mode */
+     ^
+"src/oa_app.c", line 244: Warning:  #111-D: statement is unreachable
+      switch (playtone)
+      ^
+"src/oa_app.c", line 320: Warning:  #177-D: variable "i" was declared but never referenced
+      oa_uint16 i;
+                ^
+"src/oa_app.c", line 321: Warning:  #177-D: variable "payload_len" was declared but never referenced
+      oa_uint16 payload_len;
+                ^
+"src/oa_app.c", line 322: Warning:  #177-D: variable "crc16" was declared but never referenced
+      oa_uint16 crc16;
+                ^
+"src/oa_app.c", line 323: Warning:  #177-D: variable "temp_u32" was declared but never referenced
+      oa_uint32 temp_u32;
+                ^
+"src/oa_app.c", line 581: Warning:  #188-D: enumerated type mixed with another type
+        sos_handle_polarity_0 = 1;
+                              ^
+"src/oa_app.c", line 586: Warning:  #188-D: enumerated type mixed with another type
+        sos_handle_polarity_0 = 0;
+                              ^
+"src/oa_app.c", line 609: Warning:  #177-D: variable "eint_level" was declared but never referenced
+      oa_uint8 eint_level;
+               ^
+"src/oa_app.c", line 802: Warning:  #177-D: variable "cmdLen" was declared but never referenced
+      oa_uint16 cmdLen= len;
+                ^
+"src/oa_app.c", line 878: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          temp_u32 = oa_strtoul(gModuleConfigT.vir_id,NULL,16);
+                                ^
+"src/oa_app.c", line 949: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const char *"
+                      gprs_connect(NULL,gClientStateT.client_t.domain_name,gClientStateT.client_t.port,LSL_CON_MODE_DOMAIN);
+                                        ^
+"src/oa_app.c", line 955: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const char *"
+                      gprs_connect(NULL,gClientStateT.client_t.ip_address,gClientStateT.client_t.port,LSL_CON_MODE_IP);
+                                        ^
+"src/oa_app.c", line 1094: Warning:  #177-D: variable "t" was declared but never referenced
+      oa_uint32 t;
+                ^
+"src/oa_app.c", line 1173: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              temp_u32 = oa_strtoul(gModuleConfigT.vir_id,NULL,16);
+                                    ^
+"src/oa_app.c", line 1194: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_strncpy(&gModuleStateT.user_com_str[15],"ModuleString",oa_strlen("ModuleString"));
+                         ^
+"src/oa_app.c", line 1222: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      if(!oa_strncmp((q + 4),"?=",2)) { psw = q + 6; warn_msg = OA_TRUE; }
+                     ^
+"src/oa_app.c", line 1225: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      if (!oa_strncmp(q, "CMD=", 4))
+                      ^
+"src/oa_app.c", line 1227: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1227: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1230: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "PKT=", 4))     // 读取心跳包内容
+                           ^
+"src/oa_app.c", line 1232: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1232: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1234: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(oa_strncmp(pd,"HeartInfo?",10))
+                        ^
+"src/oa_app.c", line 1244: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_sprintf(gModuleStateT.user_com_str,"PKT=%s,Time=%ds;",
+                         ^
+"src/oa_app.c", line 1249: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_sprintf(gModuleStateT.user_com_str,"Heart PKT Closed;");
+                         ^
+"src/oa_app.c", line 1252: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1252: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1254: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "HRT=", 4))     // 设置心跳包
+                           ^
+"src/oa_app.c", line 1256: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1256: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1258: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1258: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1259: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pp = oa_strchr(pd,'@');
+                         ^
+"src/oa_app.c", line 1259: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pp = oa_strchr(pd,'@');
+             ^
+"src/oa_app.c", line 1284: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          temp_u32 = oa_atoi(pd);
+                             ^
+"src/oa_app.c", line 1312: Warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "oa_func_ptr"
+              oa_timer_start(LSL_TIMER_HEART_PKT,heart_pkt_timer_ind,NULL,gModuleConfigT.heart_t.t);
+                                                 ^
+"src/oa_app.c", line 1315: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "PWC=", 4))     // 更改操作密码     (3/3-WR)
+                           ^
+"src/oa_app.c", line 1317: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1317: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1319: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1319: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1342: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "CIP=", 4))     // 清除域名、IP、端口 (RESERVED)
+                           ^
+"src/oa_app.c", line 1344: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1344: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1347: Warning:  #111-D: statement is unreachable
+          switch(c)
+          ^
+"src/oa_app.c", line 1357: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "NET=", 4))     //  更改数据中心 IP 地址及端口号 (1/3-WR)
+                           ^
+"src/oa_app.c", line 1359: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1359: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1361: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pp = oa_strchr(pd,',');
+                         ^
+"src/oa_app.c", line 1361: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pp = oa_strchr(pd,',');
+             ^
+"src/oa_app.c", line 1364: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              pp = oa_strchr(pd,'，');
+                             ^
+"src/oa_app.c", line 1364: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+              pp = oa_strchr(pd,'，');
+                 ^
+"src/oa_app.c", line 1367: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1367: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1408: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "DNS=", 4))     // 更改数据中心域名及端口号 (1/3-WR)
+                           ^
+"src/oa_app.c", line 1410: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1410: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1412: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pp = oa_strchr(pd,',');
+                         ^
+"src/oa_app.c", line 1412: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pp = oa_strchr(pd,',');
+             ^
+"src/oa_app.c", line 1415: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              pp = oa_strchr(pd,'，');
+                             ^
+"src/oa_app.c", line 1415: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+              pp = oa_strchr(pd,'，');
+                 ^
+"src/oa_app.c", line 1418: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1418: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1451: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "BPS=", 4))     // 更改串口速率     (1/3-WR)
+                           ^
+"src/oa_app.c", line 1453: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1453: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1455: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(!oa_strncmp(pd,"2400#",5))
+                         ^
+"src/oa_app.c", line 1459: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"4800#",5))
+                              ^
+"src/oa_app.c", line 1463: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"9600#",5))
+                              ^
+"src/oa_app.c", line 1467: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"14400#",6))
+                              ^
+"src/oa_app.c", line 1471: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"19200#",6))
+                              ^
+"src/oa_app.c", line 1475: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"38400#",6))
+                              ^
+"src/oa_app.c", line 1479: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"57600#",6))
+                              ^
+"src/oa_app.c", line 1483: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if(!oa_strncmp(pd,"115200#",7))
+                              ^
+"src/oa_app.c", line 1502: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+          oa_sprintf(gModuleStateT.user_com_str,"BPS->%d;",baud_temp);
+                     ^
+"src/oa_app.c", line 1547: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_DEFAULT_DCS);
+          ^
+"src/oa_app.c", line 1547: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_DEFAULT_DCS);
+          ^
+"src/oa_app.c", line 1549: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "DNB=", 4))     // 解绑手机
+                           ^
+"src/oa_app.c", line 1556: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1556: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1559: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1559: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1570: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              if(oa_strncmp(pd,"THIS",4)) // len = 4, not "THIS" string
+                            ^
+"src/oa_app.c", line 1581: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                          if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                         ^
+"src/oa_app.c", line 1581: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                          if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                                          ^
+"src/oa_app.c", line 1608: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                      if(!oa_strncmp(pd,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                     ^
+"src/oa_app.c", line 1608: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                      if(!oa_strncmp(pd,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                        ^
+"src/oa_app.c", line 1622: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "NBD=", 4))     // 设定第一个手机（RESERVED）
+                           ^
+"src/oa_app.c", line 1624: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1624: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1628: Warning:  #111-D: statement is unreachable
+          switch(c)
+          ^
+"src/oa_app.c", line 1638: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "BND=", 4))     // 绑定手机
+                           ^
+"src/oa_app.c", line 1645: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1645: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1647: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1647: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1658: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              if(oa_strncmp(pd,"THIS",4)) // len = 4, not "THIS" string
+                            ^
+"src/oa_app.c", line 1671: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                          if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                         ^
+"src/oa_app.c", line 1671: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                          if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                                          ^
+"src/oa_app.c", line 1710: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                      if(!oa_strncmp(pd,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                     ^
+"src/oa_app.c", line 1710: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                      if(!oa_strncmp(pd,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                        ^
+"src/oa_app.c", line 1737: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "ASK=", 4))     // 绑定手机查询
+                           ^
+"src/oa_app.c", line 1739: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1739: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1741: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(oa_strncmp(pd,"MOBILE?",7))
+                        ^
+"src/oa_app.c", line 1758: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_sprintf(temp_str,"(%d)%s;",++temp_u8,gModuleConfigT.phone[i]);
+                             ^
+"src/oa_app.c", line 1759: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_strcat(gModuleStateT.user_com_str,temp_str);
+                            ^
+"src/oa_app.c", line 1759: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                  oa_strcat(gModuleStateT.user_com_str,temp_str);
+                                                       ^
+"src/oa_app.c", line 1768: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_DEFAULT_DCS);
+          ^
+"src/oa_app.c", line 1768: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_DEFAULT_DCS);
+          ^
+"src/oa_app.c", line 1770: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "GET=", 4))     // 读取配置
+                           ^
+"src/oa_app.c", line 1772: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1772: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1774: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(oa_strncmp(pd,"CFG?",4)) 
+                        ^
+"src/oa_app.c", line 1784: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_sprintf(gModuleStateT.user_com_str,"DNS=%s,PORT=%d;",
+                         ^
+"src/oa_app.c", line 1789: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_sprintf(gModuleStateT.user_com_str,"IP=%s,PORT=%d;",
+                         ^
+"src/oa_app.c", line 1794: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1794: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1797: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "SID=", 4))     // ID号配置
+                           ^
+"src/oa_app.c", line 1799: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1799: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1801: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          pj = oa_strchr(pd,'#');
+                         ^
+"src/oa_app.c", line 1801: Warning:  #513-D: a value of type "oa_char *" cannot be assigned to an entity of type "oa_uint8 *"
+          pj = oa_strchr(pd,'#');
+             ^
+"src/oa_app.c", line 1830: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "IDR=", 4))     // ID号读取 (1/3-WR)
+                           ^
+"src/oa_app.c", line 1832: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1832: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          PASSWORD_CHK();
+          ^
+"src/oa_app.c", line 1834: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(oa_strncmp(pd,"NUM?",4)) 
+                        ^
+"src/oa_app.c", line 1839: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          temp_u32 = oa_strtoul(gModuleConfigT.vir_id,NULL,16);
+                                ^
+"src/oa_app.c", line 1841: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+          oa_sprintf(gModuleStateT.user_com_str,"ID=0x%08X(十进制:%u);",temp_u32,temp_u32);
+                     ^
+"src/oa_app.c", line 1843: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1843: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1845: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          else if (!oa_strncmp(q, "@WEI&CHEN@IMEI#", 15))
+                               ^
+"src/oa_app.c", line 1849: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+          oa_strcat(gModuleStateT.user_com_str,"Q");
+                    ^
+"src/oa_app.c", line 1850: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1850: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+          ^
+"src/oa_app.c", line 1852: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "@WEI&CHEN@SPKEY#" , 16))
+                           ^
+"src/oa_app.c", line 1867: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_sprintf(temp_str,"%04X",temp_u32);
+                             ^
+"src/oa_app.c", line 1868: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_strcat(temp_spk,temp_str);
+                            ^
+"src/oa_app.c", line 1868: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                  oa_strcat(temp_spk,temp_str);
+                                     ^
+"src/oa_app.c", line 1875: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_sprintf(temp_str,"%03X",temp_u32);
+                             ^
+"src/oa_app.c", line 1876: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+                  oa_strcat(temp_spk,temp_str);
+                            ^
+"src/oa_app.c", line 1876: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+                  oa_strcat(temp_spk,temp_str);
+                                     ^
+"src/oa_app.c", line 1880: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(!oa_strncmp(pd,temp_spk,30))
+                         ^
+"src/oa_app.c", line 1880: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+          if(!oa_strncmp(pd,temp_spk,30))
+                            ^
+"src/oa_app.c", line 1884: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+              oa_strcpy(gModuleStateT.user_com_str,gModuleConfigT.psw_t.chr);
+                        ^
+"src/oa_app.c", line 1884: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              oa_strcpy(gModuleStateT.user_com_str,gModuleConfigT.psw_t.chr);
+                                                   ^
+"src/oa_app.c", line 1886: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+              ^
+"src/oa_app.c", line 1886: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+              ^
+"src/oa_app.c", line 1899: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "STM32F103_CFG_ASK;", 18))
+                           ^
+"src/oa_app.c", line 1904: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      else if (!oa_strncmp(q, "STM32F103_CFG_GET;", 18))
+                           ^
+"src/oa_app.c", line 1907: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      	if(!oa_strncmp(q + 16,"VER",3))
+      	               ^
+"src/oa_app.c", line 1918: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+  	else if(!oa_strncmp(q,"THISVERSION?",12))
+  	                    ^
+"src/oa_app.c", line 1923: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+          	oa_sprintf(gModuleStateT.user_com_str,"Please Wait and Try Again.");
+          	           ^
+"src/oa_app.c", line 1924: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+  			USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+  			^
+"src/oa_app.c", line 1924: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+  			USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+  			^
+"src/oa_app.c", line 1929: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+          	oa_sprintf(gModuleStateT.user_com_str,"CHIP For Device:%d.%d.%d.%d;CHIP For Transmit:%d.%d.%d.%d;CHIP For GPRS:%d.%d.%d.%d",
+          	           ^
+"src/oa_app.c", line 1933: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+  			USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+  			^
+"src/oa_app.c", line 1933: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+  			USER_COM_STR_ACK(OA_SMSAL_UCS2_DCS);
+  			^
+"src/oa_app.c", line 1134: Warning:  #177-D: variable "what" was declared but never referenced
+      oa_bool     what;
+                  ^
+"src/oa_app.c", line 1953: Warning:  #513-D: a value of type "void (*)(void *)" cannot be assigned to an entity of type "oa_func_n_ptr"
+      param->main_entry = oa_app_main;
+                        ^
+"src/oa_app.c", line 1963: Warning:  #940-D: missing return statement at end of non-void function "oa_user_dll_entry_dispatch_to_sys"
+  }
+  ^
+"src/oa_app.c", line 119: Warning:  #177-D: variable "adc_buf" was declared but never referenced
+  static  oa_char     adc_buf[64] = {0};
+                      ^
+"src/oa_app.c", line 122: Warning:  #177-D: variable "connent_tx_hrtpkt" was declared but never referenced
+  static  oa_char     connent_tx_hrtpkt = 0;
+                      ^
+"src/oa_app.c", line 123: Warning:  #177-D: variable "adc_data" was declared but never referenced
+  static  oa_uint32   adc_data;
+                      ^
+"src/oa_app.c", line 124: Warning:  #177-D: variable "voltage_value" was declared but never referenced
+  static  oa_uint32   voltage_value = 0;
+                      ^
+"src/oa_app.c", line 125: Warning:  #177-D: variable "current_value" was declared but never referenced
+  static  oa_uint32   current_value = 0;
+                      ^
+src/oa_app.c: 167 warnings, 0 errors

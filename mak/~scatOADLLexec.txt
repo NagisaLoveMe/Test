@@ -1,0 +1,50 @@
+;/*****************************************************************************
+; *
+; * Filename:
+; * ---------
+; *   mak\~scatOADLLexec.txt
+; *
+; * Project:
+; * --------
+; *   OPEN CPU 60D
+; *
+; * Description:
+; * ------------
+; *   defines the memory map for the validation board
+; *
+; * Author:
+; * -------
+; *   system auto generator v0.1beta
+; *
+; * Auto Generated Date:
+; * -------
+; *   2014/10/1 0:1:0
+; *
+; * Revision History: None
+; ****************************************************************************/
+;
+;--------------------
+;=========================================================================
+; This scatter file is auto-generated and please DO NOT change the content at will
+;=========================================================================
+;
+;--------------------
+; SCHEME   : external 3.75MB flash memory and 4MB SRAM
+; PLATFORM : MT6260D
+; FEATURES : ESBNOR 
+;
+;--------------------
+
+;0x00008000 is the address of openat_dll_pool, DO NOT modify it.
+;if the position of openat_dll_pool changed, system will generate a new one.
+;size can be extended, now is 1024k(0x100000)
+
+OA_ALL 0x00008000 0x40000
+{
+    OA_CODE 0x00008000 0x40000
+    {
+         *.o (OA_USER_ENTRY,+First)
+         * (+RO,+ZI,+RW)
+    }
+}
+

@@ -1,0 +1,16 @@
+"inc\oa_type.H", line 1423: Warning:  #64-D: declaration does not declare anything
+     oa_i2c_ctrl_single_write_t; /* Single write of blocking mode */
+     ^
+"src/oa_sms.c", line 114: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                             ^
+"src/oa_sms.c", line 114: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+              if(!oa_strncmp(gSmsStateT.phone,gModuleConfigT.phone[i],11)) // the phone num has existed
+                                              ^
+"src/oa_sms.c", line 171: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+      	oa_chset_convert(OA_CHSET_UCS2,OA_CHSET_GB2312,data,gSmsStateT.rx,len*2);
+      	                                               ^
+"src/oa_sms.c", line 171: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+      	oa_chset_convert(OA_CHSET_UCS2,OA_CHSET_GB2312,data,gSmsStateT.rx,len*2);
+      	                                                    ^
+src/oa_sms.c: 5 warnings, 0 errors

@@ -1,0 +1,12 @@
+---- 103 Matches (12 in 0 files) ----
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):static oa_bool      cfg_tell_103 = OA_FALSE;            // 是否和103已经同步了配置
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):    if(cfg_tell_103 == OA_FALSE) {PIN_RING_LED_LOW();}
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):    if(cfg_tell_103 == OA_FALSE)
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):            cfg_tell_103 = OA_FALSE;
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):        cfg_tell_103 = OA_FALSE;
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src)://    else if (!oa_strncmp(q, "STM32F103_ID_GET;", 17))
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src)://        cfg_tell_103 = OA_TRUE;
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):    else if (!oa_strncmp(q, "STM32F103_CFG_ASK;", 18))
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):        cfg_tell_103 = OA_FALSE;
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):    else if (!oa_strncmp(q, "STM32F103_CFG_GET;", 18))
+Oa_app.c (d:\wd\project\wd_systemapplication\sys0001_dust\firmware\dust_md251v_1_0_0_0\src):        cfg_tell_103 = OA_TRUE;

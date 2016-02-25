@@ -1,0 +1,34 @@
+"inc\oa_type.H", line 1423: Warning:  #64-D: declaration does not declare anything
+     oa_i2c_ctrl_single_write_t; /* Single write of blocking mode */
+     ^
+"src/oa_soc.c", line 57: Warning:  #188-D: enumerated type mixed with another type
+  oa_soc_context g_soc_context = {0};
+                                  ^
+"src/oa_soc.c", line 115: Warning:  #177-D: variable "check_counter" was declared but never referenced
+      static oa_uint16 check_counter=0;
+                       ^
+"src/oa_soc.c", line 224: Warning:  #550-D: variable "ret" was set but never used
+      oa_uint16 ret = 0;
+                ^
+"src/oa_soc.c", line 805: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "const oa_char *"
+      temp_u32 = oa_strtoul(gModuleConfigT.vir_id,NULL,16);
+                            ^
+"src/oa_soc.c", line 833: Warning:  #177-D: variable "ret" was declared but never referenced
+      oa_uint16 ret = 0;
+                ^
+"src/oa_soc.c", line 943: Warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "oa_func_ptr"
+          oa_timer_start(LSL_TIMER_HEART_PKT,heart_pkt_timer_ind,NULL,gModuleConfigT.heart_t.t);
+                                             ^
+"src/oa_soc.c", line 1025: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+  		oa_strcpy(apn_info.apn,apn);
+  		          ^
+"src/oa_soc.c", line 1047: Warning:  #167-D: argument of type "oa_uint8 *" is incompatible with parameter of type "oa_char *"
+      oa_strcpy(soc_addr_info.addr, address);
+                ^
+"src/oa_soc.c", line 1182: Warning:  #167-D: argument of type "void (*)(void)" is incompatible with parameter of type "oa_func_ptr"
+                          oa_timer_start(LSL_TIMER_HEART_PKT,heart_pkt_timer_ind,NULL,1);
+                                                             ^
+"src/oa_soc.c", line 789: Warning: C3017W: ret may be used before being set
+    oa_int16 ret;
+             ^
+src/oa_soc.c: 11 warnings, 0 errors

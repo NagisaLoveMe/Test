@@ -1,0 +1,69 @@
+# 
+# CMT Generic make file for libraries V 0.1
+#  
+# 1. GNU make
+# 2. No dependencies is implemented
+# 3. Not clear the intermediate files
+#
+# Contact meng.zhang@chinamobiletech.com if you need help 
+#
+
+APPNAME = openat
+APPNAME_DLL = openatdll
+APPNAME_COEFF = oa_audcoeff
+ARM_DIR = C:\ARM\RVCT31\RVCT\Programs\3.1\569\win_32-pentium
+
+CC = $(ARM_DIR)/armcc.exe --thumb
+CFLAGS = -c -g --apcs /inter/noswst --cpu ARM7EJ-S --littleend -O3 --remove_unneeded_entities --split_sections --diag_suppress 1,2548 --dwarf2 -DOPENAT_SUPPORT -Iinc 
+LINK = $(ARM_DIR)/armar
+LFLAGS = 
+
+SRCPATH = src
+OBJPATH = obj
+OUTPATH = out
+LOGPATH = log
+
+############### BELOW DO NOT MODIFY ###############
+############### BELOW DO NOT MODIFY ###############
+############### BELOW DO NOT MODIFY ###############
+
+SOURCES := $(notdir $(wildcard $addprefix $(SRCPATH)/*.c))
+OBJS := $(notdir $(addprefix $(OBJPATH)/, $(patsubst %.c,%.o,$(SOURCES))))
+OBJS_FULLPATH := $(addprefix $(OBJPATH)/, $(patsubst %.c,%.o,$(SOURCES)))
+OUTS := $(patsubst %.o, %.txt, $(OBJS_FULLPATH))
+
+VPATH = src
+
+.SUFFIXES: .c .o
+.PHONY : all
+
+%.o : $(SRCPATH)/%.c
+	@echo Compiling $< ...
+	@$(CC) $(CFLAGS) --errors $(addprefix $(LOGPATH)/, $(patsubst %.o, %.txt, $(notdir $@))) -o $(addprefix $(OBJPATH)/, $@) $<
+	@echo $(OBJPATH)/$@ >>mak/~linkdll.via
+	
+$(APPNAME).lib : $(OBJS)
+	@echo Linking $(OBJS_FULLPATH) to $(APPNAME).lib ...
+	@$(LINK) $(LFLAGS) --create lib\$(APPNAME).lib $(OBJS_FULLPATH)
+
+~linkdll.via :
+	@echo --map --info sizes,totals --symbols --xref --remove --keep oa_user_dll_entry_dispatch_to_sys --scatter mak/~scatOADLLexec.txt --output out/dll/openatdll.elf --symdefs out/dll/openatdll.sym --list out/dll/openatdll.lis >>mak/~linkdll.via
+	@echo lib/~OPENATLIB.sym >>mak/~linkdll.via
+
+all : ~linkdll.via $(APPNAME).lib
+
+.PHONY : openatdll
+
+$(APPNAME_DLL).o : log\$(APPNAME_DLL).c
+	@echo Compiling $(APPNAME_DLL).o ...
+	@$(CC) $(CFLAGS) -o lib\$(APPNAME_DLL).o log\$(APPNAME_DLL).c --errors log\$(APPNAME_DLL).txt
+
+openatdll : $(APPNAME_DLL).o
+
+.PHONY : oa_audcoeff
+
+$(APPNAME_COEFF).o : coeff\$(APPNAME_COEFF).c
+	@echo Compiling $(APPNAME_COEFF).o ...
+	@$(CC) $(CFLAGS) -o lib\$(APPNAME_COEFF).o coeff\$(APPNAME_COEFF).c --errors log\$(APPNAME_COEFF).txt
+
+oa_audcoeff : $(APPNAME_COEFF).o

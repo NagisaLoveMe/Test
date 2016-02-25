@@ -1,0 +1,4 @@
+"inc\oa_type.h", line 1423: Warning:  #64-D: declaration does not declare anything
+     oa_i2c_ctrl_single_write_t; /* Single write of blocking mode */
+     ^
+coeff\oa_audcoeff.c: 1 warning, 0 errors

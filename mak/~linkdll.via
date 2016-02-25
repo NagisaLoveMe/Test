@@ -1,0 +1,6 @@
+--map --info sizes,totals --symbols --xref --remove --keep oa_user_dll_entry_dispatch_to_sys --scatter mak/~scatOADLLexec.txt --output out/dll/openatdll.elf --symdefs out/dll/openatdll.sym --list out/dll/openatdll.lis 
+lib/~OPENATLIB.sym 
+obj/oa_app.o 
+obj/oa_setting.o 
+obj/oa_sms.o 
+obj/oa_soc.o 
